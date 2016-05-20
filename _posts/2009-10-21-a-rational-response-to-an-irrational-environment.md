@@ -1,0 +1,18 @@
+---
+id: 1030
+title: A Rational Response to an Irrational Environment
+date: 2009-10-21T01:27:23+00:00
+author: Greg Wilson
+layout: post
+guid: http://ucosp.wordpress.com/?p=1030
+permalink: /2009-2010/education/2009/10/a-rational-response-to-an-irrational-environment/
+categories:
+  - Education
+---
+Four years ago, I asked one of the best students I&#8217;ve ever had why she always did her projects in one big burst of activity starting at the last possible minute. She explained to me that (a) she was more productive if she focused on one thing at a time, rather than trying to timeslice on three or four assignments at once, and (b) the later she left it, the more stable the assignment spec would be, because the keeners that started early would have pestered the prof into correcting the inevitable omissions, ambiguities, and what-not. In short, doing things the &#8220;wrong&#8221; way was actually a very rational response to an irrational environment.
+
+I&#8217;ve seen a different sort of &#8220;rational response&#8221; in project courses like this one. Other courses have assignments with set weights and fixed deadlines, so on any given Tuesday, a student working on Basie or WikiDev has to choose between putting hours into a 10% stats assignment that&#8217;s due on Friday, or putting those same hours into&#8212;well, into something that could probably be pushed back a day or two. Or three. Or into next week, because once stats is out of the way it&#8217;s time to catch up on operating systems, which is due on Monday. And then there&#8217;s the AI midterm, and the outline of the term paper for the psych course that turned out _not_ to be as easy as everyone had said, and around and around it goes.
+
+Now, if we (the mentors for the UCOSP projects) had been parceling things up into bite-sized chunks and setting specific due dates, I&#8217;m confident that almost everyone taking part would have done the work, and done it well, by our deadlines. But we&#8217;re not doing that, because one of the points of this course is to give you a chance to find out what it&#8217;s like to set and then meet your own goals. The net result is pretty clear at this point: in many cases, students are doing less per week on this course than they would on a more structured course that had exactly the same content. It isn&#8217;t that anyone is deliberately slacking; it&#8217;s just that the fixed deadlines in other course always seem to be looming up out of the fog, and it&#8217;s very hard to choose to put them out of your mind and work on something whose panic point is further off.
+
+It&#8217;s hard for us as instructors to figure out how to address this (which is a prof&#8217;s way of saying, &#8220;I don&#8217;t know what to do.&#8221;) Micromanaging students the way they&#8217;re usually micromanaged defeats the purpose of this course, and almost certainly makes it more fun. Asking students to specify each week what they will have completed a week hence doesn&#8217;t work well either: what does the prof do when the student says, &#8220;I will have written some tests for the module I&#8217;m working on&#8221; three weeks in a row? If the prof says, &#8220;Enough: if they aren&#8217;t checked in by next Thursday, I&#8217;m taking 5% off your course grade,&#8221; then we&#8217;re right back into traditional assignment-based micromanagement (or even worse, since the &#8220;assignments&#8221; are being sprung on students at unpredictable intervals). We haven&#8217;t yet found something that works well; suggestions would be welcome.
