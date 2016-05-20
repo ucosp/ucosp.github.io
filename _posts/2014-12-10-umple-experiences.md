@@ -1,0 +1,20 @@
+---
+id: 2974
+title: UMPLE Experiences
+date: 2014-12-10T16:40:20+00:00
+author: rtholmes
+layout: post
+guid: http://ucosp.ca/?p=2974
+permalink: /fall-2014/2014/12/umple-experiences/
+categories:
+  - Fall 2014
+---
+Karin Ng from the University of Toronto gives us her experience working with UMPLE this term.
+
+Umple merges UML modeling and programming to facilitate Model-Oriented Programming. The models include class diagrams, state machines, and composite structures. My primary project is to create a generator that takes in current Umple semantics to produce GraphViz (open source graph visualization software) code of an entity-relationship diagram. After I have completed the generation, I hope to look into refactoring all the generators and extracting commonalities into a generation library.
+
+Since the entity-relationship diagram generation is a larger project that requires the knowledge of how to use GraphViz, I decided to begin with a smaller issue, dealing with modifying the tooltips of current implementations of GraphViz diagrams. Believing it would be a relatively simple task, I was surprised when I took a deeper look into the code and realized that the entire structure of the diagram being generated had to be modified to accommodate the new tooltip requirements. The surprises for the seemingly simple task didn’t end there. After modifying the code, creating test cases, and testing my implementation on a clean version of the build, I was satisfied with its reliability. Though I believed that my testing was rigorous enough, I failed to notice that the code I modified was used to create the Meta-Model (a model of the Umple compiler, using Umple). The Meta-Model creation was not tested within the build and, naively trusting the lack of fails within the build, I thought myself safe. The result was a broken Meta-Model that wasn’t noticed until after the faulty code was committed. Mortified by my error, I tackled the problem as soon as I received the email notifying me of the glaring issue. After much correspondence with my mentor (including tips and encouragement), the problems were ironed out and I learned not only the technical skills I had hoped to gain concerning GraphViz, but the value of truly rigorous testing and mentorship.
+
+In a less technical sense, I also encountered difficulties with juggling my schedule. I had decided from the beginning that I would allocate time for Umple every week on my calendar. However, having taken 6 courses, I found it easy to let my scheduled Umple time slip, especially when other seemingly more pressing assignments with hard deadlines and midterms presented themselves. I also vastly underestimated the time required to get the code working 100%. Much of the work during my internship involved the creation of new features, and I rarely had to greatly modify old code. As such, the modification of the diagram generation and its problems came as a shock to me. Though implementation itself may not have taken too much time in of itself, the time requirement easily doubled when taking into account all factors (such as the design and creation of tests, the re-working of the implementation after exposing bugs from the tests, ensuring compatibility with any updates during the entire process, and applying changes from feedback from mentors).
+
+Regardless, the complications were vastly overshadowed by the immense satisfaction and joy of getting something working (no matter how small) that will impact hundreds of people. Having discovered all the possible obstacles that may get in the way of a timely commit, it only took a small reformation of my schedule and a little more mindfulness to adequately fit in some Umple development. The fun-factor of Umple development certainly helped in squeezing in more time (even if in the wee hours of the morning) to tackle the next bug or problem. The lessons have been innumerable, from working with a team scattered across the country to things as simple as not being afraid to ask questions, and I am endlessly grateful for the opportunity to be part of UCOSP.

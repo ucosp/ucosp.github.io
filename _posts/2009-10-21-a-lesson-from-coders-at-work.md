@@ -1,0 +1,20 @@
+---
+id: 1027
+title: 'A Lesson from &quot;Coders at Work&quot;'
+date: 2009-10-21T01:00:26+00:00
+author: Greg Wilson
+layout: post
+guid: http://ucosp.wordpress.com/?p=1027
+permalink: /2009-2010/education/2009/10/a-lesson-from-coders-at-work/
+categories:
+  - Education
+---
+Over the last four or five years, there&#8217;s been a dramatic increase in the number of books about programming: not the specifics of this language or that framework, but the act of programming itself. Fogel&#8217;s [_Producing Open Source Software_](http://www.amazon.com/gp/product/0596007590), Spinellis&#8217;s [_Code Reading_](http://www.amazon.com/gp/product/0201799405), Ford&#8217;s [_The Productive Programmer_](http://www.amazon.com/gp/product/0596519788), Doar&#8217;s [_Practical Development Environments_](http://www.amazon.com/gp/product/0596007965), and multi-author collections like [_Beautiful Code_](http://www.amazon.com/gp/product/0596510047) and [_Beautiful Testing_](http://www.amazon.com/gp/product/0596159811) all discuss the things that separate people who can write code that compiles and runs from people who can build useful software.
+
+The most recent entry in this category is Seibel&#8217;s [_Coders at Work_](http://www.amazon.com/gp/product/1430219483), which collects his interviews with 15 great programmers. I haven&#8217;t finished it yet, but two things keep jumping out at me. The first is the importance of getting things into users&#8217; hands as early as possible. It doesn&#8217;t have to be finished, and it certainly doesn&#8217;t have to be perfect; as long as it does something&#8212;anything&#8212;that they find useful, they&#8217;ll start giving you feedback. No matter how smart you are, you can only foresee a small fraction of what people will actually want to do, or how they&#8217;ll want to do it; letting them drive your software around is the best way to get the early course corrections that can save you days or weeks of wasted effort.
+
+The second thing that jumps out at me is how focused these programmers are on avoiding waste&#8212;or rather, on delivering value. Will adding this feature or refactoring that module make the user&#8217;s life better in the near term? If not, file a ticket and move on, because there are plenty of other things that will. No, you shouldn&#8217;t let too much [technical debt](http://en.wikipedia.org/wiki/Technical_debt) pile up, and yes, there are times when writing another abstraction layer will make development of the next dozen things so much faster that you&#8217;ll be ahead overall, but you have to know both your users and your code very well to be sure of that payoff. It&#8217;s all to easy to go from, &#8220;I want to fix this bug,&#8221; to, &#8220;Hm, I should refactor these classes first,&#8221; and then to, &#8220;Well, if I&#8217;m going to do that, I should upgrade this library,&#8221; and, &#8220;So first I&#8217;ll patch my OS,&#8221; until you find yourself three hours later saying, &#8220;OK, so once I&#8217;ve shaved the yak&#8230;&#8221;
+
+So does this mean people should just hack together whatever works today with no thought for tomorrow? Of course not. Well-written code is its own reward, and one of your goals as a professional should be to make the right way of doing things a habit so that you won&#8217;t make silly mistakes when you&#8217;re tired, stressed, and up against a deadline. As an inveterate yak-shaver, I&#8217;ve found it helpful to always ask someone by email, &#8220;Should I be doing this?&#8221; _before_ I start anything that&#8217;s going to take more than half an hour. At the very least, it keeps my teammates up to date with what I&#8217;m working on, and more often than you&#8217;d think, someone on the team will say, &#8220;Actually, wouldn&#8217;t it be more productive for you to do this other thing instead?&#8221;
+
+Now, if you&#8217;ll excuse me, I need to go milk a whale&#8230;
