@@ -1,10 +1,8 @@
 ---
-id: 2758
 title: Contact us
 date: 2010-06-18T19:13:32+00:00
 author: Andrew Louis
-layout: page
-guid: http://ucosp.ca/?page_id=2758
+layout: default
 ---
 ### Getting in touch
 
