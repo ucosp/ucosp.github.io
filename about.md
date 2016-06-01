@@ -1,18 +1,13 @@
 ---
-id: 2743
 title: About
-date: 2010-06-18T18:24:37+00:00
-author: Andrew Louis
 layout: default
-guid: http://ucosp.ca/?page_id=2743
 ---
-**UCOSP brings together students from coast to coast to work together on joint capstone projects.** Students learn first-hand what distributed development is like. Each team has students from two to four universities, and uses a mix of agile and open source processes under the supervision of a faculty or industry lead.
-
-**NOTE:** UCOSP is currently only accepting students from Canadian universities.
+## Who are we?
+UCSOP is run by a steering committee of faculty members from several Canadian Universities under the umbrella of the [Canadian Association of Computer Science](http://cacsaic.org).
 
 ## Why are we doing this?
 
-Software development is no longer bound by time zones or national borders. Projects of all kinds—academic, commercial, and open source—may have their GUI designers in Boston, their database team in Bangalore, and their testers in Budapest and Buenos Aires. Working effectively in such teams is challenging: it requires strong communication skills, and makes proper use of coordination tools such as version control and ticketing systems more important than ever. But it is also an opportunity for students to build ties with peers across the country and around the world, and for instructors to breathe new life into old courses.
+Software development is no longer bound by time zones or national borders. Projects of all kinds—academic, commercial, and open source—may have their GUI designers in Boston, their database team in Bangalore, and their testers in Budapest and Buenos Aires. Working effectively in such teams is challenging: it requires strong communication skills, and makes proper use of coordination tools such as version control, ticketing systems, code review and continuous integration more important than ever. But it is also an opportunity for students to build ties with peers across the country and around the world.
 
 ## What we&#8217;re looking for right now:
 

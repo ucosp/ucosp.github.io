@@ -1,6 +1,5 @@
 ---
 title: Projects (January 2016)
-date: 2015-12-09T12:21:33+00:00
 author: ucosp-steering
 layout: default
 ---
