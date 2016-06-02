@@ -1,27 +1,27 @@
 ---
 title: Information for students
-date: 2010-06-18T18:21:02+00:00
-author: Andrew Louis
 layout: default
 ---
+## Information for students
+
 Want to work on an open-source project with other students from across the country—for credit? UCOSP gives you this opportunity.
 
-## What&#8217;s in it for me?
+### What&#8217;s in it for me?
 
   * **Experience:** learn about open source software development and how to work together with a team that&#8217;s geographically distributed.
   * **Credit:** Given to to you by your home university, typically as part of a capstone course.
   * **A chance to meet and work with students from all across Canada.**
   * **A job?** UCOSP puts you in contact with many people in the software industry, many of whom might be able to hire you.
 
-## What projects can I work on?
+### What projects can I work on?
 
 Have a look at the [Projects page](projects.html).
 
-## This sounds cool! How do I apply?
+### This sounds cool! How do I apply?
 
 We ask that you get in touch with your UCOSP faculty contact. These are listed in the table below.
 
-<table style="height: 1056px;" width="670" cellspacing="0" cellpadding="0">
+<table  width="670" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="bottom">
       <span style="color: #000000; font-family: Arial;">Stefan D. Bruda</span>
@@ -343,7 +343,19 @@ We ask that you get in touch with your UCOSP faculty contact. These are listed i
       <span style="color: #000000; font-family: Arial;">rtholmes@cs.uwaterloo.ca</span>
     </td>
   </tr>
-  
+  <tr>
+    <td valign="bottom">
+      <span style="color: #000000; font-family: Arial;">Nora Znotinas</span>
+    </td>
+    
+    <td valign="bottom">
+      <span style="color: #000000; font-family: Arial;">Wilfrid Laurier University</span>
+    </td>
+    
+    <td valign="bottom">
+      <span style="color: #000000; font-family: Arial;">nznotinas@wlu.ca</span>
+    </td>
+  </tr>
   <tr>
     <td valign="bottom">
       <span style="color: #000000; font-family: Arial;">Bil Tzerpos</span>
