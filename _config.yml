@@ -11,8 +11,7 @@ email: ucosp-steering@ucosp.ca
 description: > # this means to ignore newlines until "baseurl:"
     Undergraduate Capstone Open Source Projects
 baseurl: "" # the subpath of your site, e.g. /blog
-#url: "http://ucosp.github.io" # the base hostname & protocol for your site
-url: "http://localhost:4000" # the base hostname & protocol for your site
+url: "http://ucosp.github.io" # the base hostname & protocol for your site
 twitter_username: ucosp
 github_username:  ucosp
 
