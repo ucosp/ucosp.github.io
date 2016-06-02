@@ -3,7 +3,11 @@ title: Projects (January 2016)
 author: ucosp-steering
 layout: default
 ---
-## Overview
+### Overview
+
+Below you will find the list of projects from the last term.  When we have finalized the set of projects for the fall, we will update this list.
+
+### January 2016
 
 This term UCOSP is happy to be partnering with six projects.  Some recent projects are no longer on the list because of travel costs or other commitments, but we are pleased to welcome two projects from Mozilla.  The project descriptions will be updated shortly.
 
@@ -14,7 +18,7 @@ This term UCOSP is happy to be partnering with six projects.  Some recent proj
   * **Jupyter Notebook:** Documents with embedded live code
   * **Code Coverage:** Tools to analyze test coverage
 
-## Review Board
+### Review Board
 
 <div id="magicdomid4">
   <div id="magicdomid4" class="ace-line gutter-author-p-60686 emptyGutter" data-author-initials="DT" data-author-name="David T" data-author-link="/ep/profile/qQ9eSobObEJ">
@@ -85,11 +89,11 @@ This term UCOSP is happy to be partnering with six projects.  Some recent proj
   </div>
 </div>
 
-## Markus
+### Markus
 
 MarkUs is a web-based grading tool built with Ruby on Rails. The primary goal of MarkUs is to make it easy for graders to read and annotate students&#8217; code. Graders also fill in a marking scheme or rubric created by the instructor.  Annotations may be saved for later reuse.  Students submit their code using either the web interface or using standard Subversion tools, and can form their own groups when allowed by the instructor. As MarkUs grows, we continue to add more useful features including a REST API that allows some operations on MarkUs to be scripted, a remark request system, more reporting, and improving support for PDF annotations.  We are also working towards integrating a testing infrastructure that would allow students to run instructor created tests on their submission and get realtime feedback. Students working on MarkUs will learn basic web application development technologies using Ruby and Rails.  MarkUs is hosted on Github so students will become familiar with Git and the process we use when working on the code. Because MarkUs is used by several thousand students in more than 4 universities (on 3 continents!), we take code quality seriously.  All code submissions go through a code review, so the first task that students are asked to complete is fixing a trivial bug so that they become familiar with the code review process.  Students working on MarkUs need to be able to work in Linux either natively or in a virtual machine. As the fall term comes to a close, we are putting together a list of the next projects. More information: <http://markusproject.org/> and their blog, <http://blog.markusproject.org/>
 
-## Umple
+### Umple
 
 Umple is an open source toolkit whose objective is to merge UML modeling and programming into a single activity. Umple can be used in several ways: It can be used as a textual language for UML. It can also be used as a programming-language pre-processor, allowing UML concepts like associations and state machines to be added directly to Java, C++, and PHP. In addition, Umple allows drawing UML diagrams online and generating code directly from those diagrams. It is the goal of the Umple team to have large numbers of programmers and modelers incrementally adopt Umple. The barriers to entry are low, since using Umple can be done in a minimal way, without disrupting the existing model or code. Umple is an open-source project hosted on Github. You will have the opportunity to learn some or all of the following:
 
@@ -104,7 +108,7 @@ Umple is an open source toolkit whose objective is to merge UML modeling and pro
 
 The exact set of skills you will employ depends on the task(s) you choose to work on. More information: <http://www.umple.org> Suitable student projects: <http://projects.umple.org>
 
-##  Formulize
+###  Formulize
 
 Formulize is a tool for making data management systems on the web. It has extensive support for modelling workflows, so that organizations can customize how users interact with the data that Formulize is managing. It is aimed at “power users” in not-for-profits and other organizations without large IT departments and resources, empowering them to create systems that would otherwise require custom programming to deploy. The most basic operation in Formulize, is the creation of forms. Administrators can specify what elements should appear on the form, and also how different groups of end users should be able to interact with the form. From there, administrators can make custom screens that control how lists of entries in each form are shown to end users. Administrators can also control how different forms relate to each other, similar to describing table relationships in an ERD. These relationships then govern how data is queried from the database, enabling screens to display complex sets of information to users, rather than just entries from a single form. Formulize can work as a standalone application, installed on a web server. Formulize can also be embedded within any PHP-driven web application on the same server where it is installed. A Drupal module has been created that supports extensive integration with the Drupal content management platform, including single sign-on for users. Integration plugins for WordPress and Joomla have also been created (by previous UCOSP students!).
 
@@ -121,7 +125,7 @@ Formulize is a tool for making data management systems on the web. It has extens
   * Learn about our [version control and continuous integration process](https://jegelstaff.github.io/formulize/).
   * Visit the Formulize [support forums](http://www.freeformsolutions.ca/en/forum/41).
 
-## Jupyter Notebook
+### Jupyter Notebook
 
 <div id="magicdomid4">
   <p>
@@ -202,9 +206,9 @@ Formulize is a tool for making data management systems on the web. It has extens
     <span class="">[4] </span><span class=""><a href="https://github.com/mozilla/emr-bootstrap-spark/">https://github.com/mozilla/emr-bootstrap-spark/</a></span>
   </div>
   
-  <h2>
+  <h3>
     Code Coverage collector and explorer
-  </h2>
+  </h3>
   
   <p>
     At Mozilla we have a lot of code and thousands of tests in various languages.  Our goal is to use code coverage to be smarter about how we measure quality, determine what we test, and look for overall trends as time passes.  Today, code coverage is straighforward for C++, but when it comes to Javascript, we run into a variety of issues.  While we have success in many cases, there is a lot of work to ensure we have reliable data for all cases.

@@ -24,4 +24,10 @@ It was a year of changes and time to reflect.  Schools across North America have
 
 On the otherhand we also had two schools decide not to send students this year, at least partly because they were not able to find faculty to supervise the students.  Increasing enrolments at our universities means that faculty have less time for the "extras".
 
-Fortunately, we have not had difficulty finding interested open source projects.  We saw a higher turnover in projects this year, but we have also had cold call inquiries about how a project might be included in the program.
+Fortunately, we have not had difficulty finding interested open source projects.  We saw a higher turnover in projects this year, but we have also had cold call inquiries about how a project might be included in the program.  For the record, we are looking for some new projects for next year.
+
+Another change is the makeup of the steering committee.  Michelle is stepping down from the steering committee for a well-earned sabbatical.  Karen Reid will be chairing the committee for the next year.  Rob Walker from the University of Calgary is joining the steering committee.  Meghan Allen, Ted Kirkpatrick, and  Eleni Stroulia continue to serve on the committee.
+
+#### New Look
+
+We decided to move the web site over to github.io, partly to save a bit of money on web hosting, but mostly to make it easier to add posts and maintain the archive of information.  You can still reach us at info@ucosp.ca

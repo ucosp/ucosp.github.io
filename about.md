@@ -109,7 +109,7 @@ Students post finished work (including tests) to their team’s code review site
 
 Since September 2008, undergraduates from several schools in North America have been taking part in joint capstone projects in order to learn first-hand what distributed development is like. Previously run as a pilot project, UCOSP has emerged into a truly national program.
 
-Information about previous years is [available here](http://ucosp.wordpress.com/about/).
+Information about previous years is [available here]({{site-url}}/historical-participation.html).
 
 ## Get in touch!
 

@@ -6,12 +6,74 @@ author: ucosp-steering
 layout: default
 guid: http://ucosp.ca/?page_id=2821
 ---
-UCOSP has brought together 400+ students from 20+ universities over the past four years to gain real-world distributed development experience. A brief glimpse of the schools and projects that have been involved in UCOSP in the past appears below.
+UCOSP has brought together 600+ students from 30 universities over the past seven years to gain real-world distributed development experience. A brief glimpse of the schools and projects that have been involved in UCOSP in the past appears below.
 
+### Winter 2016
 
-## Fall 2015
+25 students from 13 universities worked on 6 projects.  The sprint was held at the [Mozilla office](https://www.mozilla.org/en-US/contact/spaces/toronto/) in Toronto, Ontario.
 
-42 students from 15 Canadian Universities worked on 8 projects. The Sprint was held at the University of Toronto.
+**Universities**
+
+  * Bishop&#8217;s University
+  * Dalhousie University
+  * Laurentian University
+  * University of Alberta
+  * University of British Columbia
+  * University of Guelph
+  * University of Manitoba
+  * University of New Brunswick
+  * University of Ottawa
+  * University of Toronto
+  * University of Toronto at Mississauga
+  * Western University
+  * Wilfrid Laurier University
+  
+**Projects**
+
+  * Review Board
+  * UMPLE
+  * Formulize  
+  * MarkUs
+  * Jupyter Notebook
+  * Mozilla Code Coverage
+  
+### Fall 2015
+35 students from 18 universities worked on 8 projects. The sprint was held at the University of British Columbia in Vancouver, BC.
+
+**Universities**
+
+  * Bishop&#8217;s University
+  * Brock University
+  * Dalhousie University
+  * MacEwan University
+  * Simon Fraser University
+  * University of Alberta
+  * University of British Columbia
+  * University of Calgary
+  * University of Guelph
+  * University of Manitoba
+  * University of New Brunswick
+  * University of Ottawa
+  * University of Regina
+  * University of Toronto
+  * University of Waterloo
+  * University of Windsor
+  * Western University
+  * Wilfrid Laurier University
+  
+**Projects**
+
+  * Markus
+  * UMPLE
+  * BB10 Phonegap
+  * Formulize
+  * Review Board
+  * CodeIgniter
+  * Waterbear
+  * Mylyn
+
+### Winter 2015
+42 students from 15 Canadian Universities worked on 8 projects. The sprint was held at Simon Fraser University in Surrey, BC.
 
 **Universities**
 
@@ -30,7 +92,7 @@ UCOSP has brought together 400+ students from 20+ universities over the past fou
   * University of Toronto
   * University of Waterloo
   * Western University
-
+  
 **Projects**
 
   * Markus
@@ -41,10 +103,41 @@ UCOSP has brought together 400+ students from 20+ universities over the past fou
   * Fish
   * CodeIgniter
   * Waterbear
+  
+### Fall 2014
 
-## Spring 2014
+40 students from 15 Universties worked on 6 projects.  The sprint was held at the [Mozilla office](https://www.mozilla.org/en-US/contact/spaces/toronto/) in Toronto, Ontario.
 
-12 students from 4 Canadian Universities worked on 3 projects. The Sprint was held at the University of Toronto.
+**Universities**
+
+  * Brock University
+  * Dalhousie University
+  * Laurentian University
+  * Simon Fraser University
+  * Thompson Rivers University
+  * University of Alberta
+  * University of British Columbia
+  * University of Guelph
+  * University of Manitoba
+  * University of New Brunswick
+  * University of Ottawa
+  * University of Regina
+  * University of Toronto
+  * University of Waterloo
+  * Western University
+
+**Projects**
+
+  * Markus
+  * UMPLE
+  * BB10 Phonegap
+  * Formulize
+  * Review Board
+  * FreeseeR
+
+### Summer 2014
+
+12 students from 4 Canadian Universities worked on 3 projects. The sprint was held at the [Mozilla office](https://www.mozilla.org/en-US/contact/spaces/toronto/) in Toronto.
 
 **Universities**
 
@@ -59,7 +152,7 @@ UCOSP has brought together 400+ students from 20+ universities over the past fou
   * MarkUs
   * Review Board
 
-## Winter 2014
+### Winter 2014
 
 48 students from 22 Canadian Universities working on 27 [projects](http://http://ucosp.ca/projects_january-2013/ "projects"). The sprint was held at the Facebook Headquarters in Palo Alto, California.
 
@@ -110,7 +203,7 @@ UCOSP has brought together 400+ students from 20+ universities over the past fou
   * Waterbear
   * Wikimedia &#8211; Cron
 
-## Fall 2013
+### Fall 2013
 
 This sprint brought together 43 students from 18 Canadian Universities to work on 9 Open Source projects. The sprint was held at the [Mozilla office](https://www.mozilla.org/en-US/contact/spaces/toronto/) in Toronto, Ontario.
 
@@ -147,7 +240,7 @@ This sprint brought together 43 students from 18 Canadian Universities to work o
   * Umple
   * Waterbear
 
-## Winter 2013
+### Winter 2013
 
 43 students from 19 Canadian Universities working on 7 [projects](http://http://ucosp.ca/projects_january-2013/ "projects"). The sprint was held at the Facebook Headquarters in Palo Alto, California.
 
@@ -183,11 +276,11 @@ This sprint brought together 43 students from 18 Canadian Universities to work o
   * Umple
   * Markus
 
-## Fall 2012
+### Fall 2012
 
 58 students from 16 schools working on 8 projects. The sprint was held in Kitchener-Waterloo, ON.
 
-Participating schools:
+***Participating schools:***
 
   * Dalhousie University
   * University of New Brunswick
@@ -198,7 +291,7 @@ Participating schools:
   * University of  Toronto
   * University of Toronto Mississauga
   * University of Waterloo
-  * Wilfred Laurier University
+  * Wilfrid Laurier University
   * Brock University
   * University of Manitoba
   * University of Alberta
@@ -206,50 +299,28 @@ Participating schools:
   * Simon Fraser University
   * University of British Columbia
 
-<div>
-  Participating projects:
-</div>
+*** Projects***
+  * Review Board
+  * Formulize
+  * Eclipse
+  * FreeseeR
+  * MarkUs
+  * Technolgy Explorer
+  * HTML Blackberry
+  * Umple
 
-<div>
-  <ul>
-    <li>
-      Review Board
-    </li>
-    <li>
-      Formulize
-    </li>
-    <li>
-      Eclipse
-    </li>
-    <li>
-      FreeseeR
-    </li>
-    <li>
-      MarkUs
-    </li>
-    <li>
-      Technolgy Explorer
-    </li>
-    <li>
-      HTML Blackberry
-    </li>
-    <li>
-      Umple
-    </li>
-  </ul>
-</div>
 
-## Winter 2012
+### Winter 2012
 
 37 students from 9 schools working on 6 projects. The sprint was held in Vancouver, BC.
 
-## Fall 2011
+### Fall 2011
 
 34 students from 10 schools working on 8 projects. The sprint was held in Toronto, ON.
 
 ### Winter 2010
 
-### Schools:
+*** Universities***
 
 45 students from 8 schools.
 
@@ -262,7 +333,7 @@ Participating schools:
   * <a>University of the Virgin Islands</a>
   * <a>University of Waterloo</a>
 
-### Projects:
+*** Projects***
 
   * [Basie](http://basieproject.org)
   * [Eclipse4Edu](http://wiki.eclipse.org/Eclipse_IDE_for_Education)
@@ -272,9 +343,9 @@ Participating schools:
   * [Pony-Build](http://github.com/ctb/pony-build/)
   * [Thunderbird](http://www.mozillamessaging.com/)
 
-## Fall 2009
+### Fall 2009
 
-### Schools:
+*** Universities:***
 
 45 students from 12 schools.
 
@@ -292,7 +363,7 @@ Participating schools:
   * [University of the Virgin Islands](http://www.uvi.edu/sites/uvi/Pages/DSM-Computer_Science-Home.aspx)
   * [University of Waterloo](http://www.cs.uwaterloo.ca/)
 
-### Projects:
+*** Projects:***
 
   * [Basie](http://basieproject.org)
   * [Eclipse4Edu](http://wiki.eclipse.org/Eclipse_IDE_for_Education)
