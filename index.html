@@ -2,6 +2,12 @@
 layout: default
 ---
 
+<div class="body">
+    <h1>Welcome to UCOSP!</h2>
+        
+    <p>UCOSP is a program that brings together students from across Canada to work together on open source projects.  Students learn how open source software development takes place, practice distributed development, and have the opportunity to work on project with knowledgeable industry or faculty mentors on software with real users.</p>
+</div>
+
 {% for post in paginator.posts %}
 <div class="article">
     <div class="well">
@@ -20,11 +26,7 @@ layout: default
 </div>
 {% endfor %}
 
-<div class="body">
-    <h1>Welcome to UCOSP!</h2>
-        
-    <p>UCOSP is a program that brings together students from across Canada to work together on open source projects.  Students learn how open source software development takes place, practice distributed development, and have the opportunity to work on project with knowledgeable industry or faculty mentors on software with real users.</p>
-</div>
+
 
 <div class="pagination">
   {% if paginator.previous_page %}

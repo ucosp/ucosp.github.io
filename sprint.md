@@ -3,7 +3,7 @@ id: 2880
 title: Fall 2012 Sprint
 date: 2012-09-17T15:58:17+00:00
 author: rtholmes
-layout: page
+layout: post
 guid: http://ucosp.ca/?page_id=2880
 ---
 The fall 2012 sprint is just around the corner; this page will provide a general overview of the schedule for the sprint. If you have any questions, please get in touch via info@ucosp.ca and we will try to answer your question and update the page with additional information. 

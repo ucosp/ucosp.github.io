@@ -1,11 +1,7 @@
 ---
-id: 2993
 title: Getting Ready for the New Year
-date: 2015-12-15T11:55:41+00:00
 author: Karen Reid
 layout: post
-guid: http://ucosp.ca/?p=2993
-permalink: /2009-2010/uncategorized/2015/12/getting-ready-for-the-new-year/
 categories:
   - Uncategorized
 ---

@@ -3,10 +3,11 @@ id: 2821
 title: Historical Participation
 date: 2011-07-29T16:30:13+00:00
 author: ucosp-steering
-layout: page
+layout: default
 guid: http://ucosp.ca/?page_id=2821
 ---
 UCOSP has brought together 400+ students from 20+ universities over the past four years to gain real-world distributed development experience. A brief glimpse of the schools and projects that have been involved in UCOSP in the past appears below.
+
 
 ## Fall 2015
 
