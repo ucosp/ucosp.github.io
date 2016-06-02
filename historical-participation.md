@@ -280,7 +280,7 @@ This sprint brought together 43 students from 18 Canadian Universities to work o
 
 58 students from 16 schools working on 8 projects. The sprint was held in Kitchener-Waterloo, ON.
 
-***Participating schools:***
+**Participating schools:**
 
   * Dalhousie University
   * University of New Brunswick
@@ -299,7 +299,8 @@ This sprint brought together 43 students from 18 Canadian Universities to work o
   * Simon Fraser University
   * University of British Columbia
 
-*** Projects***
+**Projects**
+
   * Review Board
   * Formulize
   * Eclipse
@@ -320,7 +321,7 @@ This sprint brought together 43 students from 18 Canadian Universities to work o
 
 ### Winter 2010
 
-*** Universities***
+**Universities**
 
 45 students from 8 schools.
 
@@ -333,7 +334,7 @@ This sprint brought together 43 students from 18 Canadian Universities to work o
   * <a>University of the Virgin Islands</a>
   * <a>University of Waterloo</a>
 
-*** Projects***
+**Projects**
 
   * [Basie](http://basieproject.org)
   * [Eclipse4Edu](http://wiki.eclipse.org/Eclipse_IDE_for_Education)
@@ -345,7 +346,7 @@ This sprint brought together 43 students from 18 Canadian Universities to work o
 
 ### Fall 2009
 
-*** Universities:***
+**Universities:**
 
 45 students from 12 schools.
 
@@ -363,7 +364,7 @@ This sprint brought together 43 students from 18 Canadian Universities to work o
   * [University of the Virgin Islands](http://www.uvi.edu/sites/uvi/Pages/DSM-Computer_Science-Home.aspx)
   * [University of Waterloo](http://www.cs.uwaterloo.ca/)
 
-*** Projects:***
+**Projects:**
 
   * [Basie](http://basieproject.org)
   * [Eclipse4Edu](http://wiki.eclipse.org/Eclipse_IDE_for_Education)
