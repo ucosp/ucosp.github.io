@@ -10,8 +10,8 @@ For general inquiries about UCOSP, please contact us at [info@ucosp.ca](mailto:a
 
 ### UCOSP steering committee
 
-  * Michelle Craig
   * Karen Reid
   * Eleni Stroulia
   * Ted Kirkpatrick
   * Meghan Allen
+  * Robert Walker
