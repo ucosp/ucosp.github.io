@@ -12,6 +12,8 @@ We expect to add to this list over the next week or so, but here are the project
   * **Review Board: **Code review tool.
   * **Markus: **Web-based grading platform.
   * **UMPLE: **UML modeling and programming tool.
+  * **Firefox Developer Tools - 3D Z-index Tool
+  * **TaskCluster-Pulse
   
 ### Review Board
 
