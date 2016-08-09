@@ -375,12 +375,4 @@ We ask that you get in touch with your UCOSP faculty contact. These are listed i
 
 ## More questions
 
-If your questions aren&#8217;t addressed below, see our [general information page](http://ucosp.ca/about) or [get in touch by email.](mailto:info@ucosp.ca)
-
-### I&#8217;m on co-op (or a part-time student). Can I still apply?
-
-Unfortunately, we are only able to accept full-time students who are not currently on a co-op term into the UCOSP program.
-
-### How much time will this take up?
-
-About the same as any other course: 8-10 hours per week.
+If your questions aren&#8217;t addressed above, see our [general information page](http://ucosp.ca/about), the [FAQ]({{site_url}}/sprint_faq.html) or [get in touch by email.](mailto:info@ucosp.ca)
