@@ -108,7 +108,7 @@ We ask that you get in touch with your UCOSP faculty contact. These are listed i
   
   <tr>
     <td valign="bottom">
-      <span style="color: #000000; font-family: Arial;">Michael Katchabaw</span>
+      <span style="color: #000000; font-family: Arial;">Robert Mercer</span>
     </td>
     
     <td valign="bottom">
@@ -116,7 +116,7 @@ We ask that you get in touch with your UCOSP faculty contact. These are listed i
     </td>
     
     <td valign="bottom">
-      <span style="color: #000000; font-family: Arial;">katchab@csd.uwo.ca</span>
+      <span style="color: #000000; font-family: Arial;">mercer@csd.uwo.ca</span>
     </td>
   </tr>
   
@@ -234,7 +234,7 @@ We ask that you get in touch with your UCOSP faculty contact. These are listed i
   
   <tr>
     <td valign="bottom">
-      <span style="color: #000000; font-family: Arial;">Andrea Bunt</span>
+      <span style="color: #000000; font-family: Arial;">Rasit Eskicioglu</span>
     </td>
     
     <td valign="bottom">
@@ -242,13 +242,13 @@ We ask that you get in touch with your UCOSP faculty contact. These are listed i
     </td>
     
     <td valign="bottom">
-      <span style="color: #000000; font-family: Arial;">bunt@cs.umanitoba.ca</span>
+      <span style="color: #000000; font-family: Arial;">Rasit.Eskicioglu@cs.umanitoba.ca</span>
     </td>
   </tr>
   
   <tr>
     <td valign="bottom">
-      <span style="color: #000000; font-family: Arial;">Michael Fleming</span>
+      <span style="color: #000000; font-family: Arial;">Przemyslaw Pochec</span>
     </td>
     
     <td valign="bottom">
@@ -256,7 +256,7 @@ We ask that you get in touch with your UCOSP faculty contact. These are listed i
     </td>
     
     <td valign="bottom">
-      <span style="color: #000000; font-family: Arial;">mwf@unb.ca</span>
+      <span style="color: #000000; font-family: Arial;">pochec@unb.ca</span>
     </td>
   </tr>
   
@@ -318,7 +318,7 @@ We ask that you get in touch with your UCOSP faculty contact. These are listed i
   
   <tr>
     <td valign="bottom">
-      <span style="color: #000000; font-family: Arial;">Arnold Rosenbloom</span>
+      <span style="color: #000000; font-family: Arial;">Andrew Petersen</span>
     </td>
     
     <td valign="bottom">
@@ -326,13 +326,13 @@ We ask that you get in touch with your UCOSP faculty contact. These are listed i
     </td>
     
     <td valign="bottom">
-      <span style="color: #000000; font-family: Arial;">arnold@cs.toronto.edu</span>
+      <span style="color: #000000; font-family: Arial;">andrew.petersen@utoronto.ca</span>
     </td>
   </tr>
   
   <tr>
     <td valign="bottom">
-      <span style="color: #000000; font-family: Arial;">Reid Holmes</span>
+      <span style="color: #000000; font-family: Arial;">Byron Weber Becker</span>
     </td>
     
     <td valign="bottom">
@@ -340,7 +340,7 @@ We ask that you get in touch with your UCOSP faculty contact. These are listed i
     </td>
     
     <td valign="bottom">
-      <span style="color: #000000; font-family: Arial;">rtholmes@cs.uwaterloo.ca</span>
+      <span style="color: #000000; font-family: Arial;">bwbecker@cs.uwaterloo.ca</span>
     </td>
   </tr>
   <tr>
