@@ -67,16 +67,13 @@ Code coverage can be used for many purposes. At Mozilla we have great ideas of h
 We have two long term goals we would like see implemented: 
 
 1. Run a code coverage run every day on our infrastructure (linux64 only) for all unittests and generate a report that can be compared against a previous report. 
-
-Customer: Release Management will use this to spot trends of increased or decreased coverage by module (top level directory in the source tree) and work with module owners/managers to understand risks and plan future work.  
-
+   * Customer: Release Management will use this to spot trends of increased or decreased coverage by module (top level directory in the source tree) and work with module owners/managers to understand risks and plan future work. 
 2. Collect code coverage per test for each of the unittests we run and store the data in active data. 
-
- Customer: Developers would be able to determine what unittests they need to run based on the changes in their patch
+    * Customer: Developers would be able to determine what unittests they need to run based on the changes in their patch
+    * Customer: Release Management will be able to see code coverage of a new patch that they are considering uplifting to a beta/release version of Firefox. 
  
- Customer: Release Management will be able to see code coverage of a new patch that they are considering uplifting to a beta/release version of Firefox. 
+For the purposes of the 2016 Fall UCOSP program we will start by delivering goal #1. In order to achieve this we will need to:
  
-For the purposes of the 2016 Fall UCOSP program we will start by delivering goal #1. In order to achieve this we will need to: 
   * Ensure we can build and run Firefox with c++ code coverage built in (build work, taskcluster work)
   * Ensure we can collect coverage from all test suites and proper gcda and gnco files are generated (taskcluster work, harness work) 
   * Retrieve all coverage data files and merge them together into a single lcov report (taskcluster work, lcov toolchain work, possibly docker image work) 
