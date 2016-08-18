@@ -5,19 +5,19 @@ layout: default
 ---
 ### Overview
 
-We expect to add to this list over the next week or so, but here are the projects that are confirmed so far.
+We have an excellent list of projects, and I'd like to thank all the project mentors for taking the time to work with our students.
 
 ### September 2016
 
-  * **Review Board:** Code review tool.
-  * **Markus:** Web-based grading platform.
-  * **UMPLE:** UML modeling and programming tool.
+  * **Review Board:**
+  * **Markus:**
+  * **UMPLE:**
+  * **Firefox Code Coverage**
   * **Firefox Developer Tools - 3D Z-index Tool**
   * **TaskCluster-Pulse**
   * **Mylyn**
   * **Pontoon**
   * **Flyweb**
-  * **Code Coverage Collector**
   
 ### Review Board
 
