@@ -8,15 +8,16 @@ layout: default
 
 ## Sign me up! What are the requirements?
 
-  * The project should be—duh!—open source and have at least some existing users.
+  * The project should open source and have at least some existing users.
   * An aspect/feature/chunk of work suitable for students to work on for a semester
-  * Someone to be available to act as a mentor and technical lead during the semester. Additionally, it’s important that this mentor be able to travel to Vancouver for a code sprint from September 17 &#8211; 20 (email us if this is a problem.)
+  * Someone to be available to act as a mentor and technical lead during the semester. Additionally, it’s important that this mentor be able to travel to the code sprint which is held either around the third weekend in September or the third weekend in January.  The sprint moves around the country.  It is usually in Toronto one term and one of the western cities in the other term.
 
 ## What kinds of things have students worked on in the past?
 
-  * Helped develop an account setup wizard for Thunderbird
-  * Fixed bugs in Mercurial
   * Worked on the geospatial database extensions for Ingres.
+  * Implemented new features in a web application. Recent projects have used Django, Rails, Java.
+  * Worked on Eclispe plugins.
+  * Worked on mobile phone applications.
 
 ## How much will get done?
 
