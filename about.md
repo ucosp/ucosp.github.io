@@ -9,12 +9,12 @@ UCSOP is run by a steering committee of faculty members from several Canadian Un
 
 Software development is no longer bound by time zones or national borders. Projects of all kinds—academic, commercial, and open source—may have their GUI designers in Boston, their database team in Bangalore, and their testers in Budapest and Buenos Aires. Working effectively in such teams is challenging: it requires strong communication skills, and makes proper use of coordination tools such as version control, ticketing systems, code review and continuous integration more important than ever. But it is also an opportunity for students to build ties with peers across the country and around the world.
 
-## What we&#8217;re looking for right now:
+## What we are looking for right now:
 
-  * [Students](http://ucosp.ca/for-students/): Work on an open-source project with other students from across the country—for credit! What could be better? Find out how to apply.
-  * [Faculty mentors](http://ucosp.ca/for-faculty/): We&#8217;re looking to expand the number of schools participating this year. Find out how your university can get involved.
-  * [Open source project mentors](http://ucosp.ca/for-open-source/): Are you involved in an open source project? Help a team of students make a contribution.
-  * [Sponsors](http://ucosp.ca/for-sponsors/): We need your help to bring students together for a code sprint. And—hint, hint—UCOSP participants will be looking for employment.
+  * [Students](http://ucosp.ca/for-students.html): Work on an open-source project with other students from across the country—for credit! What could be better? Find out how to apply.
+  * [Faculty mentors](http://ucosp.ca/for-faculty.html): We are always happy to welcome new schools or new faculty supervisors.
+  * [Open source project mentors](http://ucosp.ca/for-open-source.html): Are you involved in an open source project? Help a team of students make a contribution.
+  * [Sponsors](http://ucosp.ca/for-sponsors.html): We need your help to bring students together for a code sprint. And—hint, hint—UCOSP participants will be looking for employment.
 
 ## Fall semester timelines
 
@@ -24,7 +24,14 @@ Software development is no longer bound by time zones or national borders. Proje
   * Third weekend in September: co-located code sprint (locations vary year to year) for all participating students
   * Early December: work on projects wraps up
 
-We&#8217;ll be finalizing exact dates shortly.
+## Winter semester timelines
+
+  * Late October: finalize which open source projects will be participating
+  * Early December: start matching student with projects
+  * Early January: teams have their first online meeting and start work
+  * Third weekend in January: co-located code sprint (locations vary year to year) for all participating students
+  * Early April: work on projects wraps up
+
 
 ## Some more information
 
