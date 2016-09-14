@@ -11,10 +11,10 @@ Software development is no longer bound by time zones or national borders. Proje
 
 ## What we are looking for right now:
 
-  * [Students](http://ucosp.ca/for-students.html): Work on an open-source project with other students from across the country—for credit! What could be better? Find out how to apply.
+  * [Students](http://ucosp.ca/students.html): Work on an open-source project with other students from across the country—for credit! What could be better? Find out how to apply.
   * [Faculty mentors](http://ucosp.ca/for-faculty.html): We are always happy to welcome new schools or new faculty supervisors.
   * [Open source project mentors](http://ucosp.ca/for-open-source.html): Are you involved in an open source project? Help a team of students make a contribution.
-  * [Sponsors](http://ucosp.ca/for-sponsors.html): We need your help to bring students together for a code sprint. And—hint, hint—UCOSP participants will be looking for employment.
+  * [Sponsors](http://ucosp.ca/sponsors.html): We need your help to bring students together for a code sprint. And—hint, hint—UCOSP participants will be looking for employment.
 
 ## Fall semester timelines
 
