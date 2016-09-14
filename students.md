@@ -94,7 +94,7 @@ We ask that you get in touch with your UCOSP faculty contact. These are listed i
   
   <tr>
     <td valign="bottom">
-      <span style="color: #000000; font-family: Arial;">Ted Kirkpatrick</span>
+      <span style="color: #000000; font-family: Arial;">Brian Fraser</span>
     </td>
     
     <td valign="bottom">
@@ -102,7 +102,7 @@ We ask that you get in touch with your UCOSP faculty contact. These are listed i
     </td>
     
     <td valign="bottom">
-      <span style="color: #000000; font-family: Arial;">ted@sfu.ca</span>
+      <span style="color: #000000; font-family: Arial;">bfraser@sfu.ca</span>
     </td>
   </tr>
   
