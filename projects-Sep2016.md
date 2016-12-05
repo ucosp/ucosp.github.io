@@ -1,5 +1,5 @@
 ---
-title: Projects (January 2017)
+title: Projects (September 2016)
 author: ucosp-steering
 layout: default
 ---
@@ -7,14 +7,16 @@ layout: default
 
 We have an excellent list of projects, and I'd like to thank all the project mentors for taking the time to work with our students.
 
-### January 2017
+### September 2016
 
   * **Review Board:**
+  * **Markus:**
   * **UMPLE:**
   * **Firefox Code Coverage**
-  * **Firefox Developer Tools - Inspector inline editor wigets**
+  * **Firefox Developer Tools - 3D Z-index Tool**
   * **TaskCluster-Pulse**
   * **Mylyn**
+  * **Pontoon**
   * **Flyweb**
   
 ### Review Board
@@ -24,17 +26,24 @@ Review Board is a powerful web-based code review tool that helps developers do p
 Students working on Review Board will have the opportunity to learn about back-end web development using Python and Django, as well as front-end development using HTML, CSS, Javascript, jQuery, and Backbone.js. Source control is managed via Git on GitHub. All patches are reviewed using Review Board, and students are expected to contribute to reviews for each other, as well as to other members of the development community.
 Some possible projects include:
 
-  * Making improvements to Review Board's extensions infrastructure, which allows third party developers to build features that aren't generic enough to be part of the product.
+  * Making improvements to Review Board&#8217;s extensions infrastructure, which allows third party developers to build features that aren&#8217;t generic enough to be part of the product.
   * New kinds of integration with other services, such as deeper bug tracker integration, an adapter for GitHub pull requests, or allowing users to log in using Mozilla Persona.
   * Reworking parts of the UI to work better on touch devices like tablets and smartphones.
   
-For a full list of project suggestions, check out our wiki:[Student Project Ideas](http://students.reviewboard.org/projects)
+For a full list of project suggestions, check out our wiki:[Student Project Ideas](https://reviewboard.hackpad.com/Student-Project-Ideas-bWzTgtBtq9f)
 
 Some experience using Python and/or Django, Javascript and jQuery would definitely be a plus. In our experience, Git is usually the largest stumbling block, so students comfortable with Git (or able to quickly get comfortable with Git) will likely have an easier time developing.
 
-For more information, see the project web page at <http://reviewboard.org>, or our students demo videos at <https://www.youtube.com/channel/UCTnwzlRTtx8wQOmyXiA_iCg/featured>
+For more information, see the project web page at <http://reviewboard.org>, or our students blog at <http://reviewboardstudents.wordpress.com/>
 
 
+### Markus
+
+MarkUs is a web-based grading tool built with Ruby on Rails. The primary goal of MarkUs is to make it easy for graders to read and annotate students' code. Graders also fill in a marking scheme or rubric created by the instructor.  Annotations may be saved for later reuse.  Students submit their code using either the web interface or using standard Subversion tools, and can form their own groups when allowed by the instructor. We are also working towards completing and integrated testing infrastructure that allows students to run instructor created tests on their submission and get realtime feedback. This summer we have been working on adding a feature to allow students to review other students' work.
+
+Students working on MarkUs will learn basic web application development technologies using Ruby and Rails. MarkUs is hosted on Github so students will become familiar with Git and the process we use when working on the code. Because MarkUs is used by several thousand students in more than 4 universities (on 3 continents!), we take code quality seriously. All code submissions go through a code review, so the first task that students are asked to complete is fixing a trivial bug so that they become familiar with the code review process. 
+
+Students working on MarkUs need to be able to work in Linux either natively or in a virtual machine. As the fall term comes to a close, we are putting together a list of the next projects. More information: <http://markusproject.org/>, <https://github.com/MarkUsProject/Markus>, and the blog, <http://blog.markusproject.org/>
 
 ### Umple
 
@@ -74,15 +83,15 @@ For the purposes of the 2016 Fall UCOSP program we will start by delivering goal
   * Schedule a nightly run of code coverage builds+tests in a scheduler (taskcluster)
 
 
-### Firefox Developer Tools - Inspector inline editor widgets
+### Firefox Developer Tools - 3D Z-index Tool
 
-[Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools) allow developers to inspect and debug their web applications. The Developer Tools (DevTools) are built using web technology such as HTML, CSS and JavaScript and you will have the opportunity to use the tools you are building to inspect the DevTools itself.
+Firefox Developer Tools allow developers to inspect HTML pages to better understand and debug how the structure of a web page translates into an image on the screen. Ultimately the image that is rendered to the screen is 2d, but it is composed of a variety of elements on the screen including blocks of color, text, images, and video. Conceptually these elements can be represented as a 3d document where the z-index of each element determines its height in the space. The higher z-indexed elements end up blocking the elements with lower z-indexes. However, this can become more complicated with the different types of positioning like 'absolute', 'relative', and 'fixed' positioning. Users can quickly become confused and struggle with stacking elements correctly.
 
-In this particular project, we will be working within the CSS Rules inspector, which allows developers to examine and modify the CSS of a selected DOM element in the page. We want to introduce “inline editors” - a toggleable panel within the Rules view that expands below a given css property that is being edited. For example, clicking on a color in the Rules view would expand an area below the property containing the color displaying the color picker widget as we know it today. In addition, we will be looking to update the color picker to include color palettes and contrast ratio.
+The goal of this project would be to create a tool that intuitively lets users understand this overlapping structure of their webpage by visualizing it in three dimensions. Firefox devtools used to have a 3d debugging tool called Tilt, but its focus was on showing the nesting structure of a webpage, rather than the z-index stacking behavior. That tool is also no longer shipped with the Firefox devtools as it does not support multiprocess Firefox.
 
-We want inline editors to become a common user experience pattern for visually editing values in the Rules view while also providing additional contextual information while working with the CSS property being edited. The stretch goal of this project is to implement additional inline editor widgets into our tools for CSS properties such as CSS filters and gradients, and CSS variables.
-
-Check out our [wiki](https://wiki.mozilla.org/DevTools) on how to start working with our codebase, and the design specs for the color inline editor widget (https://projects.invisionapp.com/share/9G5R8XCYZ#/screens/143217180). For more information, reach out to [:gl] on IRC. We hang out in the #devtools channel at irc://irc.mozilla.org/devtools.
+Some resources:
+Z-Indexing: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index
+Tilt Add-on: https://addons.mozilla.org/en-US/firefox/addon/tilt/
 
 ### TaskCluster-Pulse
 
@@ -97,32 +106,79 @@ all behave similarly, including accepting the same authorization
 information.  The TaskCluster source code is (of course) open source
 and available at https://github.com/taskcluster.
 
-Taskcluster is mostly configurable through configuration that is checked
-into the source-tree of whichever project is being built by Taskcluster,
-but some other settings are configured through a web interface 
-(https://tools.taskcluster.net/). We would like there to be a command line
-interface as well and that will be the project we propose for this semester.
-Features of the CLI include (but are not necessarily limited to):
-triggering builds from various github branches
-adding artifacts generated by builds to a queryable index
-signing artifacts with a secret from our secrets service
-auto-updating install from our artifacts
-one-click-loaner/interactive-shell (https://docs.taskcluster.net/tutorial/debug-task) creation	
+Pulse (http://pulseguardian.mozilla.org/) is an open message bus that
+carries messages about all sorts of automated systems at Mozilla,
+including detailed information about the status of Firefox builds and
+tests.  TaskCluster uses pulse extensively behind the scenes.
+PulseGuardian is a part of Pulse which allows anyone with an email
+address to create credentials that allow reading and creating Pulse
+messages.  However, these credentials are permanent and thus not
+suitable for transient uses such as web-site users or ephemeral
+computations.
+
+The TaskCluster-Pulse project will implement a microservice similar to
+PulseGuardian, but using JavaScript and the TaskCluster libraries.  It
+will also involve some modifications to the TaskCluster tools site
+(https://tools.taskcluster.net) to allow users to create new
+credentials.  Beyond the capabilities of PulseGuardian,
+TaskCluster-Pulse will allow creation of time-limited credentials
+which disappear when they expire.
+
+The UCOSP project will involve understanding the problem space,
+proposing and agreeing on a design (including security concerns), and
+then implementing that design.	
   
 ### Mylyn
 
 [Mylyn's](https://www.eclipse.org/mylyn/) task-focused interface reduces information overload and makes multitasking easy. Mylyn makes tasks a first class part of the IDE, integrates rich and offline editing for ALM tools, and monitors your programming activity to create a "task context" that focuses your workspace and automatically links all relevant artifacts to the task-at-hand. This puts the information you need at your fingertips and improves productivity by reducing information overload, facilitating multitasking and easing the sharing of expertise.
 
 Mylyn is written in Java and built on [Eclipse](http://www.eclipse.org/), and it's included in most Eclipse downloads, so students will have the chance to work on a tool that is downloaded over a million times every month! We have a number of projects for students to work on, including the following:
-
-1. Improvements to the Task editor which allows users to read and edits tasks from various task repositories like Bugzilla.
-2. improvements to Mylyn Task Context which tracks what files a user is interacting with when working on a task.
+ 
+1. Task editor enhancements
+  a. inline refresh as values change on the remote system
+  b. provide a way to see the previous value of changed attributes, using the Eclipse compare framework to diff text attributes
+  c. more frequent refresh of the active task
+2. Mylyn context
+  a. Improving the support for automated management of breakpoints as part of task context
+  b. Providing a way to restrict a search to files in the task context
 3. Improvements to the [Hudson/Jenkins](https://www.eclipse.org/mylyn/new/images/3.16/builds.png) connector which provides access to builds from CI systems from within Eclipse
 4. Improvements to the Gerrit connector which provides access to Gerrit code reviews from within Eclipse
 
 Students are also welcome to contribute their own ideas for consideration.
 
+### Pontoon
 
+[Pontoon](https://pontoon.mozilla.org/) is a localization tool by
+Mozilla, designed for producing high quality translations. Its core
+asset to support this goal is translation within the actual web
+application, presenting real-time translation preview, context and
+spatial limitations right in front of you.
+
+To move translation quality support further ahead, we'd like to design
+the translation review workflow that will:
+  * help reviewers identify and categorize translation issues,
+  * allow translators to learn from the received feedback from
+translation reviewers and
+  * empower team managers to evaluate performance and progress of their
+team members.
+
+At the core of this process will be the [Multidimensional Quality
+Metric (MQM) standard](http://www.qt21.eu/mqm-definition/definition-2015-12-30.html#issue_types),
+which is a framework for identifying and categorizing translation
+issues. Your task will be to create a set of 4 different UX prototypes
+of the translation review workflow in Pontoon.
+
+By contributing to Pontoon, you will:
+  * be taught how to design user interfaces to maximize the usability of
+software product,
+  * become familiar with the basics of web application development using Django,
+  * learn programming through the educational code review process,
+  * get to know the code hosting and version control platform GitHub and
+  * track development progress in Bugzilla
+
+Some experience using HTML, CSS, JavaScript, jQuery is required,
+familiarity with Django or Python is a plus. You can learn more about
+setting up the development environment in [developer documentation](http://mozilla-pontoon.readthedocs.io/en/latest/dev/install.html).
 
 ### FlyWeb
 

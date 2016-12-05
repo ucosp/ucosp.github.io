@@ -345,7 +345,7 @@ We ask that you get in touch with your UCOSP faculty contact. These are listed i
   </tr>
   <tr>
     <td valign="bottom">
-      <span style="color: #000000; font-family: Arial;">Nora Znotinas</span>
+      <span style="color: #000000; font-family: Arial;">Angele Hamel</span>
     </td>
     
     <td valign="bottom">
@@ -353,7 +353,7 @@ We ask that you get in touch with your UCOSP faculty contact. These are listed i
     </td>
     
     <td valign="bottom">
-      <span style="color: #000000; font-family: Arial;">nznotinas@wlu.ca</span>
+      <span style="color: #000000; font-family: Arial;">ahamel@wlu.ca</span>
     </td>
   </tr>
   <tr>
