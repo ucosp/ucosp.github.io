@@ -1,5 +1,5 @@
 ---
-title: Projects (September 2016)
+title: Projects (January 2017)
 author: ucosp-steering
 layout: default
 ---
@@ -7,7 +7,7 @@ layout: default
 
 We have an excellent list of projects, and I'd like to thank all the project mentors for taking the time to work with our students.
 
-### September 2016
+### January 2017
 
   * **Review Board:**
   * **UMPLE:**
