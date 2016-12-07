@@ -13,7 +13,7 @@ We have an excellent list of projects, and I'd like to thank all the project men
   * **UMPLE:**
   * **Firefox Code Coverage**
   * **Firefox Developer Tools - Inspector inline editor wigets**
-  * **TaskCluster-Pulse**
+  * **TaskCluster-CLI**
   * **Mylyn**
   * **Flyweb**
   
@@ -84,7 +84,7 @@ We want inline editors to become a common user experience pattern for visually e
 
 Check out our [wiki](https://wiki.mozilla.org/DevTools) on how to start working with our codebase, and the design specs for the color inline editor widget (https://projects.invisionapp.com/share/9G5R8XCYZ#/screens/143217180). For more information, reach out to [:gl] on IRC. We hang out in the #devtools channel at irc://irc.mozilla.org/devtools.
 
-### TaskCluster-Pulse
+### TaskCluster-CLI
 
 TaskCluster (https://docs.taskcluster.net/) is the task-execution
 framework  that supports Mozilla's continuous integration systems.  It
