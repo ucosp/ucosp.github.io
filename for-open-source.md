@@ -1,7 +1,7 @@
 ---
 title: 'Information for project mentors'
 date: 2010-06-18T18:54:20+00:00
-author: Andrew Louis
+author: UCOSP Steering
 layout: default
 ---
 We couldn't run this program without the support of our wonderful industry mentors.  
