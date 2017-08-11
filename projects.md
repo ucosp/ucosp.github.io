@@ -7,16 +7,16 @@ layout: default
 
 We have an excellent list of projects, and I'd like to thank all the project mentors for taking the time to work with our students.
 
-### January 2017
+### September 2017
 
   * **Review Board:**
   * **UMPLE:**
   * **Firefox Code Coverage**
+  * **Firefox React Debugger**
   * **Firefox Developer Tools - Inspector inline editor wigets**
   * **TaskCluster-CLI**
-  * **Mylyn**
-  * **Flyweb**
-  
+  * **Formulize**
+    
 ### Review Board
 
 Review Board is a powerful web-based code review tool that helps developers do peer review as they write code. Review Board is used by thousands of software companies including Twitter, Yahoo, and VMware, as well as many open-source projects like Apache and KDE.
@@ -72,17 +72,43 @@ For the purposes of the 2016 Fall UCOSP program we will start by delivering goal
   * Ensure we can easily compare one report to another to easily highlight differences (python script/tool, web interface) 
   * Ensure we have coverage data broken down by module- top level directory in the Firefox source tree. (validating data, organizing report/queries/storage) 
   * Schedule a nightly run of code coverage builds+tests in a scheduler (taskcluster)
+  
+### Firefox  React debugger
+
+Last year, the [Firefox Debugger](https://github.com/devtools-html/debugger.html/) team decided to re-write the UI on Github with React. Today it has a modern web stack (React, Webpack, Babel) and is one of the most widely contributed to Mozilla projects. 
+
+With this project, we want to take the next step and build on our relationships with the major framework and library teams to build the kind of tools that we would have liked to have while building the Debugger. We hope that these integrations will make the debugger feel more like a React or Ember debugger than a JS debugger.
+
+Some examples of framework and library integrations include:
+
+1. Highlighting framework frames in the call stack. 
+2. Showing framework components in the source tree.
+3. Previewing library objects on hover.
+
+Highlighting framework frames in the call stack will let us tell the user what frameworks are doing when the application pauses. For instance, if the user pauses while making an API call, the debugger call stack can show the user that the application is updating the user record because the “save” button was pressed.
+
+Showing framework components in the source tree will let users see their application’s framework types. In the case of React and Redux that includes (Components, Actions, and Stores). We think this view can be more valuable than just seeing source files because it is closer to how developers think about their applications. It also provides us a way to link to other framework information in the future. 
+
+Previewing library objects will let frameworks format the objects the way they were intended to be seen. For instance, the most important data in a React component is the props and state. We hope to give frameworks control over how users see their framework objects because we think it paves the way for future integration points in the future. 
+
+These features are exciting because it shows that when we work closely with libraries and framework teams, we can build new types of tools that help developers every day.
+
 
 
 ### Firefox Developer Tools - Inspector inline editor widgets
 
-[Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools) allow developers to inspect and debug their web applications. The Developer Tools (DevTools) are built using web technology such as HTML, CSS and JavaScript and you will have the opportunity to use the tools you are building to inspect the DevTools itself.
+[Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools) (DevTools) allow developers to inspect and debug their web applications. The DevTools are built using web technology such as HTML, CSS and JavaScript utilizing the latest web libraries such as React and Redux.
 
-In this particular project, we will be working within the CSS Rules inspector, which allows developers to examine and modify the CSS of a selected DOM element in the page. We want to introduce “inline editors” - a toggleable panel within the Rules view that expands below a given css property that is being edited. For example, clicking on a color in the Rules view would expand an area below the property containing the color displaying the color picker widget as we know it today. In addition, we will be looking to update the color picker to include color palettes and contrast ratio.
+In the Inspector, we will be working on a number of tools related to various CSS properties, Layout and Font inspection. Some examples of these new tools and features that previous students have worked on included:
+CSS Grid Inspector
+Box Model Layout panel improvements
+CSS Variables Inspection
+To read about some of the accomplishments from previous UCOSP students, visit https://hacks.mozilla.org/2017/06/new-css-grid-layout-panel-in-firefox-nightly/.
 
-We want inline editors to become a common user experience pattern for visually editing values in the Rules view while also providing additional contextual information while working with the CSS property being edited. The stretch goal of this project is to implement additional inline editor widgets into our tools for CSS properties such as CSS filters and gradients, and CSS variables.
+For the Inspector, we want to continue to working on better CSS Layout tooling such as CSS Grids and z-index inspector. In addition, we are aiming to implement more visual editors that will help developers and designers with debugging and editing complex CSS properties visually. Since CSS is very declarative by nature, we can provide tools that are commonly found in digital design tools, such as Adobe Photoshop and Illustrator, and Sketch, in order to bridge the learning gap of new developers and designers learning CSS. This would allow them to edit various CSS properties such as box-shadow, clip-path, gradient, filters, etc without knowing what the properties are.
 
-Check out our [wiki](https://wiki.mozilla.org/DevTools) on how to start working with our codebase, and the design specs for the color inline editor widget (https://projects.invisionapp.com/share/9G5R8XCYZ#/screens/143217180). For more information, reach out to [:gl] on IRC. We hang out in the #devtools channel at irc://irc.mozilla.org/devtools.
+Our goal is to help developers and designers come into the Inspector and be able to easily edit and learn HTML and CSS, and make changes to their web pages and eventually provide better authoring tools to help them also extract these changes.
+
 
 ### TaskCluster-CLI
 
@@ -109,43 +135,3 @@ signing artifacts with a secret from our secrets service
 auto-updating install from our artifacts
 one-click-loaner/interactive-shell (https://docs.taskcluster.net/tutorial/debug-task) creation	
   
-### Mylyn
-
-[Mylyn's](https://www.eclipse.org/mylyn/) task-focused interface reduces information overload and makes multitasking easy. Mylyn makes tasks a first class part of the IDE, integrates rich and offline editing for ALM tools, and monitors your programming activity to create a "task context" that focuses your workspace and automatically links all relevant artifacts to the task-at-hand. This puts the information you need at your fingertips and improves productivity by reducing information overload, facilitating multitasking and easing the sharing of expertise.
-
-Mylyn is written in Java and built on [Eclipse](http://www.eclipse.org/), and it's included in most Eclipse downloads, so students will have the chance to work on a tool that is downloaded over a million times every month! We have a number of projects for students to work on, including the following:
-
-1. Improvements to the Task editor which allows users to read and edits tasks from various task repositories like Bugzilla.
-2. improvements to Mylyn Task Context which tracks what files a user is interacting with when working on a task.
-3. Improvements to the [Hudson/Jenkins](https://www.eclipse.org/mylyn/new/images/3.16/builds.png) connector which provides access to builds from CI systems from within Eclipse
-4. Improvements to the Gerrit connector which provides access to Gerrit code reviews from within Eclipse
-
-Students are also welcome to contribute their own ideas for consideration.
-
-
-
-### FlyWeb
-
-FlyWeb is an experimental new addition to the web platform that allows browsers to discover and connect to web servers (or application servers) that are near you.  FlyWeb also lets web pages to directly host web servers that are visible to other nearby browsers.
-
-Our goal is to allow the web to let people interact with things and other people near them, without needing apps, or even a connection to the internet.  There are two classes of use cases that FlyWeb is targeted at:
-
-1. User interfaces for smart devices.
-
-As the number of smart devices grows, the problem of interacting with them increases.  Smartphone apps are currently the most common interface to these devices, but having a different app for every different thing you want to control doesn’t scale.  With FlyWeb, a smart device can simply advertise itself as a FlyWeb server, allowing browsers to discover and connect to it.  The UI for the device can be delivered as a standard web application via protocols such as HTTP and WebSocket.
-
-The user doesn’t need to search for, download, and install apps just to interact with a new device.  They can just user their browser to discover and interact with it like they would an internet service.
-
-2. App-less interaction between smartphones
-
-FlyWeb lets web-pages publish their own discoverable FlyWeb servers.  This means that web pages can “extend themselves” between phones in a programmable way.
-
-For example, a web game could expose a multiplayer mode which uses FlyWeb to start and publish a server.  When your friend discovers and connects to the game with their browser, the web page on your phone can send them a copy of the game code (the same as you received it from an internet server), and the two of you can play a multiplayer game without either of you having to download an app, or create an account, or tell each other your usernames, or any other coordination.
-
-This mechanism can be extended to other interactions between people, like file-sharing, or shared whiteboards.
-
-The UCOSP goal for the project is open-ended.  We want to see what ideas smart developers can come up with for applications that leverage the capabilities of FlyWeb.  Whether you want to build a smart device demo using Raspberry Pi, or a pure “browser to browser” demo using the web-page-publish-server feature, we want to see what you can come up with.
-
-Your project, if successful, will be featured (given your permission) on our demo showcases, and potentially used to help promote the project.
-
-Getting started is as easy as going to flyweb.github.io and following the instructions listed.
