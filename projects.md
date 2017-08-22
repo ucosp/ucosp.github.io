@@ -16,6 +16,8 @@ We have an excellent list of projects, and I'd like to thank all the project men
   * **Firefox Developer Tools - Inspector inline editor wigets**
   * **TaskCluster**
   * **Formulize**
+  * **WALA Program Analysis for Swift**
+  * **TA assignments app**
     
 ### Review Board
 
@@ -165,3 +167,75 @@ Browse the GitHub repository: https://github.com/jegelstaff/formulize
 Video tutorials for using Formulize (the full series is about three hours, but you can skip around between various videos at your leisure): http://formulize.org/formulize-workshop
 
 Learn about our version control and continuous integration process: https://jegelstaff.github.io/formulize/developers/
+
+### Swift Support in WALA
+
+Apple is a dominant player in the mobile space, and Swift is its new language for writing mobile apps. While Apple provides tooling based on LLVM, that is low-level machinery that is not readily usable by researchers working on program analysis at a higher level. Current research frameworks such as WALA and SOOT have little support for Swift, while, on the other hand, they provide extensive support for Android, even its latest versions. The result is a plethora of published tools for Android, e.g. Flowdroid, Scandroid, Stringoid, DroidInfer to name a few, and a relative dearth of tools for Apple platforms.
+Given the popularity of Apple products and that wealth of published work for Android based on available infrastructure, we believe that lack suitable Swift infrastructure is a significant impediment. So support for Swift in a major platform like WALA would enable a wide range of new work.
+
+Apple’s security model is significantly different from that of Android, for example; similarly Swift is rather different from popular languages on Android, especially at the type system level. It would be interesting to understand how these aspects affect program analysis, and analysis infrastructure is a prerequisite for such investigations.
+
+There has been some ongoing work on Swift support since the WALA hack-a-thon held at  PLDI 2017 , where the hack-a-thon participants implemented some basic level of functionality for people to explore call WALA from within the Swift compiler.
+
+#### Concrete project idea
+
+Evaluate and extend Swift call graph construction in WALA for some open source Swift code, and create any needed special-purpose policies to avoid precision loss in the face of advanced Swift features.  
+
+Mentors  
+
+ * Karim Ali, University of Alberta
+ * Julian Dolby, IBM T. J. Watson Research Center
+ 
+#### Required skills
+ * Good knowledge of compilers and/or some knowledge of the LLVM infrastructure
+ * Knowledge of Swift is beneficial
+ * C/C++ programming
+ * Java programming
+ * Knowledge about program analysis is a plus.
+
+
+### Browser Tracking Protection 
+
+####Problem statement:
+
+Current state-of-the art work on safe browsing and tracker prevention largely rely on heuristic `[1]` approaches or (semi) manually updated white/black lists `[2]`. When it comes to measuring the efficacy of privacy and tracking protection service, client-side performance is difficult to asses. Using web crawler technology to study the incidence and prevalence of tracker code also has limitations in terms of the portion of the web that can be seen. Current anti-tracking technologies attempt to block the execution of (primarily `[3]`) javascript code deemed to be providing tracking assets to third-party entities. Intervention in these cases can lead to unpredicted breakage in the functionality of websites. Furthermore, both client-side evaluation and crawler based assessment of potential fingerprinting attacks can not provide a known false negative rate when it terms of fingerprinting attacks that are undetected based on heuristic methods and blacklist-based approaches.
+
+####Project contribution:
+
+We would like to gather a labeled dataset to guide development of (rule-based) classification of page elements in real time. The aim would be to prevent tracking code from executing while minimizing page breakage. The classifier should be evaluated such that it generalizes well to new pages without the need for a black-list/white-list paradigm.
+The project will combine a small set client-side measurements for a group of opt-in users’, measured during unperturbed web browsing. The set of metrics to be collected in this context will be discussed during the September UCOSP sprint with the first full team deliverable being a finalized list of measurements to be delivered on or before October 18th. Measurement of features indicative of fingerprinting should be the primary focus with additional features relating to the user experience also considered; for example: page breakage, load-times, layout disruption, etc. Some starting points of projects active in this technology space are here:  [chameleon](https://github.com/ghostwords/chameleon), [panopticlick](https://gist.github.com/mlopatka/0932beb331d64836938018d42810af4a), [cliqz](https://github.com/cliqz-oss/privacy-bot). 
+
+#### Design and Deliverables:
+
+A web extension will be developed to perform data collection on an opt-in cohort of firefox users. Broad spectrum Javascript API calls to a variety of sources will be logged on a page-visit level. Information collected regarding api calls will be obfuscated on the client side using an [adaptation of the RAPPOR algorithm ](https://github.com/Alexrs95/rappor) before payload delivery. This will facilitate access to the raw data by UCOSP participants.
+
+Collaboration on this project between Mozilla and openWPM maintainer [Steven Engelhardt](https://senglehardt.com) will allow us to combine this information with a broader view of such API calls by detecting their  occurrence in a  large corpus of crawl data. One team member will be tasked with interfacing the classifier trained on our client data with the openWPM platform.
+
+In order to improve upon current methods for assessing anti-tracking performance, a criteria of “information leakage” will be developed and articulated in the context of reference statistics derived from the crawl data. This quantity will relate to the distinctiveness of a particular browser visit to a page in a feature space defined by the information accessible by the page.
+
+The data derived from this two-prong collection will generate a semi-labeled dataset with which to train a classifier that does not rely on black-list/white-list resources. Assuming a sufficiently level of performance is achieved, such a classifier could be used to generate and update a black-list by periodic crawls or perform tracking-blocking in real time if deployed in a web extension. A reach goal of this project will be to investigate the feasibility of detecting and clocking first-party tracking efforts, which are a [growing concern](https://medium.com/firefox-context-graph/are-trackers-the-new-backbone-of-the-web-fb800435da15) as a small number of entities gain ever-larger presence on the web.
+
+####Modular components (student roles):
+
+1. a) One team member will be tasked primarily with continuing work on [a web extension to log all javascript API calls](https://github.com/groovecoder/data-leak) executed during full scope of page interaction. Data collection may be extended to include page breakage and load time metrics.
+
+ b) The payload of Javascript api calls at the page level must be obfuscated using to guard against domain/page profiling attacks by fingerprinting. Dave Zeber, will co-mentor a second team member focussed on evaluating the possibility of extending existing differential privacy algorithms to this use case.
+ 
+2. Defining a metric of "information leakage" that occurs on a page visit will be a parallel task assigned to a third team member. This task is a bit more research focussed and relies heavily on current literature. There is substantial research already available on this topic and it is an active domain. The metric properties will be specified during the September UCOSP sprint to enable its usability as a component in the other objectives of this project. Example usage of this metric would be to help with risk assessment and further element-level actions. For pages with a very low leakage, no further action would be required. I.e. plain html pages not running javascript or setting cookies, should return a leakage value of 0.0. Pages collecting sufficient information to confidently and uniquely identify a single firefox visitor should return a leakage value of 1.0. Any value in between becomes part of the balancing act between blocking scripts (to decrease leakage) and preserving page functionality.
+
+3. Data analytics and classifier implementation: In order to make use of the data collection efforts from both the client-collection and crawl portions, a feature selection procedure must be carried out. This will be performed by a fourth team member. This task may consider the additional context of information we can get from project  [Fathom](https://github.com/mozilla/fathom/blob/master/README.md). The features selected here will form the input space of a classifier that will assign a label of safe/not-safe to specific page elements. The efficacy of classification strategies will be evaluated against the information leakage metric described above. A substantial validation step will be required here to prototype and evaluate various approaches to this problem that are expected not only to prevent fingerprinting, but also (where possible) preserve page functionality.
+
+#### Mentorship team:
+Project lead: Martin Lopatka (Mozilla)
+
+Differential Privacy expert: Dave Zeber (Mozilla)
+
+TrackWare specialist: Luke Crouch (Mozilla)
+
+OpenWPM and browser fingerprinting specialist: Steven Engelhardt (Princeton)
+
+`[1]` [privacybadger](https://www.eff.org/privacybadger), [adblockplus](https://adblockplus.org)
+
+`[2]` [disconnect.me](https://github.com/disconnectme/disconnect-tracking-protection), [ghostery](https://www.ghostery.com),  [uBlock](https://github.com/gorhill/uBlock/tree/master/assets)
+
+`[3]` While most user information is exposed through JavaScript, there are some fingerprintable surfaces which can be compromised without the use of JavaScript. For example, HTTP headers could expose operating system type and version, and browser vendor and version. 
