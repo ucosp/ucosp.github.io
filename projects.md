@@ -214,6 +214,7 @@ Current state-of-the art work on safe browsing and tracker prevention largely re
 #### Project contribution:
 
 We would like to gather a labeled dataset to guide development of (rule-based) classification of page elements in real time. The aim would be to prevent tracking code from executing while minimizing page breakage. The classifier should be evaluated such that it generalizes well to new pages without the need for a black-list/white-list paradigm.
+
 The project will combine a small set client-side measurements for a group of opt-in users’, measured during unperturbed web browsing. The set of metrics to be collected in this context will be discussed during the September UCOSP sprint with the first full team deliverable being a finalized list of measurements to be delivered on or before October 18th. Measurement of features indicative of fingerprinting should be the primary focus with additional features relating to the user experience also considered; for example: page breakage, load-times, layout disruption, etc. Some starting points of projects active in this technology space are here:  [chameleon](https://github.com/ghostwords/chameleon), [panopticlick](https://gist.github.com/mlopatka/0932beb331d64836938018d42810af4a), [cliqz](https://github.com/cliqz-oss/privacy-bot). 
 
 #### Design and Deliverables:
