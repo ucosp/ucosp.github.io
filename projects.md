@@ -9,15 +9,15 @@ We have an excellent list of projects, and I'd like to thank all the project men
 
 ### September 2017
 
-  * **Review Board:**
-  * **UMPLE:**
-  * **Firefox Code Coverage**
-  * **Firefox React Debugger**
-  * **Firefox Developer Tools - Inspector inline editor wigets**
-  * **TaskCluster**
-  * **Formulize**
-  * **WALA Program Analysis for Swift**
-  * **TA assignments app**
+  1. **Review Board:**
+  2. **UMPLE:**
+  3. **Firefox Code Coverage**
+  4. **Firefox React Debugger**
+  5. **Firefox Developer Tools - Inspector inline editor wigets**
+  6. **TaskCluster**
+  7. **Formulize**
+  8. **WALA Program Analysis for Swift**
+  9. **
     
 ### Review Board
 
@@ -196,11 +196,11 @@ Mentors
 
 ### Browser Tracking Protection 
 
-####Problem statement:
+#### Problem statement:
 
 Current state-of-the art work on safe browsing and tracker prevention largely rely on heuristic `[1]` approaches or (semi) manually updated white/black lists `[2]`. When it comes to measuring the efficacy of privacy and tracking protection service, client-side performance is difficult to asses. Using web crawler technology to study the incidence and prevalence of tracker code also has limitations in terms of the portion of the web that can be seen. Current anti-tracking technologies attempt to block the execution of (primarily `[3]`) javascript code deemed to be providing tracking assets to third-party entities. Intervention in these cases can lead to unpredicted breakage in the functionality of websites. Furthermore, both client-side evaluation and crawler based assessment of potential fingerprinting attacks can not provide a known false negative rate when it terms of fingerprinting attacks that are undetected based on heuristic methods and blacklist-based approaches.
 
-####Project contribution:
+#### Project contribution:
 
 We would like to gather a labeled dataset to guide development of (rule-based) classification of page elements in real time. The aim would be to prevent tracking code from executing while minimizing page breakage. The classifier should be evaluated such that it generalizes well to new pages without the need for a black-list/white-list paradigm.
 The project will combine a small set client-side measurements for a group of opt-in users’, measured during unperturbed web browsing. The set of metrics to be collected in this context will be discussed during the September UCOSP sprint with the first full team deliverable being a finalized list of measurements to be delivered on or before October 18th. Measurement of features indicative of fingerprinting should be the primary focus with additional features relating to the user experience also considered; for example: page breakage, load-times, layout disruption, etc. Some starting points of projects active in this technology space are here:  [chameleon](https://github.com/ghostwords/chameleon), [panopticlick](https://gist.github.com/mlopatka/0932beb331d64836938018d42810af4a), [cliqz](https://github.com/cliqz-oss/privacy-bot). 
@@ -215,11 +215,9 @@ In order to improve upon current methods for assessing anti-tracking performance
 
 The data derived from this two-prong collection will generate a semi-labeled dataset with which to train a classifier that does not rely on black-list/white-list resources. Assuming a sufficiently level of performance is achieved, such a classifier could be used to generate and update a black-list by periodic crawls or perform tracking-blocking in real time if deployed in a web extension. A reach goal of this project will be to investigate the feasibility of detecting and clocking first-party tracking efforts, which are a [growing concern](https://medium.com/firefox-context-graph/are-trackers-the-new-backbone-of-the-web-fb800435da15) as a small number of entities gain ever-larger presence on the web.
 
-####Modular components (student roles):
+#### Modular components (student roles):
 
-1. a) One team member will be tasked primarily with continuing work on [a web extension to log all javascript API calls](https://github.com/groovecoder/data-leak) executed during full scope of page interaction. Data collection may be extended to include page breakage and load time metrics.
-
- b) The payload of Javascript api calls at the page level must be obfuscated using to guard against domain/page profiling attacks by fingerprinting. Dave Zeber, will co-mentor a second team member focussed on evaluating the possibility of extending existing differential privacy algorithms to this use case.
+1. a) One team member will be tasked primarily with continuing work on [a web extension to log all javascript API calls](https://github.com/groovecoder/data-leak) executed during full scope of page interaction. Data collection may be extended to include page breakage and load time metrics.   b) The payload of Javascript api calls at the page level must be obfuscated using to guard against domain/page profiling attacks by fingerprinting. Dave Zeber, will co-mentor a second team member focussed on evaluating the possibility of extending existing differential privacy algorithms to this use case.
  
 2. Defining a metric of "information leakage" that occurs on a page visit will be a parallel task assigned to a third team member. This task is a bit more research focussed and relies heavily on current literature. There is substantial research already available on this topic and it is an active domain. The metric properties will be specified during the September UCOSP sprint to enable its usability as a component in the other objectives of this project. Example usage of this metric would be to help with risk assessment and further element-level actions. For pages with a very low leakage, no further action would be required. I.e. plain html pages not running javascript or setting cookies, should return a leakage value of 0.0. Pages collecting sufficient information to confidently and uniquely identify a single firefox visitor should return a leakage value of 1.0. Any value in between becomes part of the balancing act between blocking scripts (to decrease leakage) and preserving page functionality.
 
