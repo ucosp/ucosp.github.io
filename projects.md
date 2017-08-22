@@ -14,12 +14,13 @@ We have an excellent list of projects, and I'd like to thank all the project men
   3. **Firefox Code Coverage**
   4. **Firefox React Debugger**
   5. **Firefox Developer Tools - Inspector inline editor wigets**
-  6. **TaskCluster**
+  6. **TaskCluster Resource Monitoring**
   7. **Formulize**
   8. **WALA Program Analysis for Swift**
-  9. **
-    
-### Review Board
+  9. **Safe Browsing and Tracker Prevention**
+
+---     
+### 1. Review Board
 
 Review Board is a powerful web-based code review tool that helps developers do peer review as they write code. Review Board is used by thousands of software companies including Twitter, Yahoo, and VMware, as well as many open-source projects like Apache and KDE.
   
@@ -36,9 +37,9 @@ Some experience using Python and/or Django, Javascript and jQuery would definite
 
 For more information, see the project web page at <http://reviewboard.org>, or our students demo videos at <https://www.youtube.com/channel/UCTnwzlRTtx8wQOmyXiA_iCg/featured>
 
+---
 
-
-### Umple
+### 2. Umple
 
 Umple is an open source toolkit whose objective is to merge UML modeling and programming into a single activity. Umple can be used in several ways: It can be used as a textual language for UML. It can also be used as a programming-language pre-processor, allowing UML concepts like associations and state machines to be added directly to Java, C++, and PHP. In addition, Umple allows drawing UML diagrams online and generating code directly from those diagrams. It is the goal of the Umple team to have large numbers of programmers and modelers incrementally adopt Umple. The barriers to entry are low, since using Umple can be done in a minimal way, without disrupting the existing model or code. Umple is an open-source project hosted on Github. You will have the opportunity to learn some or all of the following:
 
@@ -53,7 +54,9 @@ Umple is an open source toolkit whose objective is to merge UML modeling and pro
 
 The exact set of skills you will employ depends on the task(s) you choose to work on. More information: <http://www.umple.org> Suitable student projects: <http://projects.umple.org>
 
-### Firefox Code Coverage
+---
+
+### 3. Firefox Code Coverage
 
 Code coverage can be used for many purposes. At Mozilla we have great ideas of how to use code coverage to better the quality of each version of Firefox and to make developers job easier by providing more data and easier testing.  
 
@@ -74,8 +77,10 @@ For the purposes of the 2016 Fall UCOSP program we will start by delivering goal
   * Ensure we can easily compare one report to another to easily highlight differences (python script/tool, web interface) 
   * Ensure we have coverage data broken down by module- top level directory in the Firefox source tree. (validating data, organizing report/queries/storage) 
   * Schedule a nightly run of code coverage builds+tests in a scheduler (taskcluster)
+ 
+ ---
   
-### Firefox  React debugger
+### 4. Firefox  React debugger
 
 Last year, the [Firefox Debugger](https://github.com/devtools-html/debugger.html/) team decided to re-write the UI on Github with React. Today it has a modern web stack (React, Webpack, Babel) and is one of the most widely contributed to Mozilla projects. 
 
@@ -95,9 +100,9 @@ Previewing library objects will let frameworks format the objects the way they w
 
 These features are exciting because it shows that when we work closely with libraries and framework teams, we can build new types of tools that help developers every day.
 
+---
 
-
-### Firefox Developer Tools - Inspector inline editor widgets
+### 5. Firefox Developer Tools - Inspector inline editor widgets
 
 [Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools) (DevTools) allow developers to inspect and debug their web applications. The DevTools are built using web technology such as HTML, CSS and JavaScript utilizing the latest web libraries such as React and Redux.
 
@@ -113,8 +118,9 @@ For the Inspector, we want to continue to working on better CSS Layout tooling s
 
 Our goal is to help developers and designers come into the Inspector and be able to easily edit and learn HTML and CSS, and make changes to their web pages and eventually provide better authoring tools to help them also extract these changes.
 
+---
 
-### Mozilla Taskcluster Resource Monitoring and Management
+### 6. Mozilla Taskcluster Resource Monitoring and Management
 
 The [Taskcluster](https://docs.taskcluster.net/) team at Mozilla builds a platform for performing the continuous integration of the Firefox web browser.  We currently perform many of our operations using cloud resources, primarily the AWS suite of tools.  We would like to expand our monitoring and management of our AWS resources.  The first area we’d like to focus on is EC2 (VMs as a service).
 
@@ -128,7 +134,9 @@ The final component would be to introduce management of resources.  The main res
 
 Students for this project should be familiar with Javascript in the Node.js environment.  We are using the native async function support included in recent versions of Node.js, but other parts of our platform are implemented using Babel for transpilation.  The main service we’re working with uses a Postgres SQL Database.
 
-### Formulize
+---
+
+### 7. Formulize
 
 Formulize is a tool for making data management systems on the web. 
 
@@ -168,7 +176,9 @@ Video tutorials for using Formulize (the full series is about three hours, but y
 
 Learn about our version control and continuous integration process: https://jegelstaff.github.io/formulize/developers/
 
-### Swift Support in WALA
+---
+
+### 8. Swift Support in WALA
 
 Apple is a dominant player in the mobile space, and Swift is its new language for writing mobile apps. While Apple provides tooling based on LLVM, that is low-level machinery that is not readily usable by researchers working on program analysis at a higher level. Current research frameworks such as WALA and SOOT have little support for Swift, while, on the other hand, they provide extensive support for Android, even its latest versions. The result is a plethora of published tools for Android, e.g. Flowdroid, Scandroid, Stringoid, DroidInfer to name a few, and a relative dearth of tools for Apple platforms.
 Given the popularity of Apple products and that wealth of published work for Android based on available infrastructure, we believe that lack suitable Swift infrastructure is a significant impediment. So support for Swift in a major platform like WALA would enable a wide range of new work.
@@ -193,8 +203,9 @@ Mentors
  * Java programming
  * Knowledge about program analysis is a plus.
 
+---
 
-### Browser Tracking Protection 
+### 9. Safe Browsing and Tracker Prevention
 
 #### Problem statement:
 
@@ -217,7 +228,8 @@ The data derived from this two-prong collection will generate a semi-labeled dat
 
 #### Modular components (student roles):
 
-1. a) One team member will be tasked primarily with continuing work on [a web extension to log all javascript API calls](https://github.com/groovecoder/data-leak) executed during full scope of page interaction. Data collection may be extended to include page breakage and load time metrics.   b) The payload of Javascript api calls at the page level must be obfuscated using to guard against domain/page profiling attacks by fingerprinting. Dave Zeber, will co-mentor a second team member focussed on evaluating the possibility of extending existing differential privacy algorithms to this use case.
+1. a) One team member will be tasked primarily with continuing work on [a web extension to log all javascript API calls](https://github.com/groovecoder/data-leak) executed during full scope of page interaction. Data collection may be extended to include page breakage and load time metrics.
+   b) The payload of Javascript api calls at the page level must be obfuscated using to guard against domain/page profiling attacks by fingerprinting. Dave Zeber, will co-mentor a second team member focussed on evaluating the possibility of extending existing differential privacy algorithms to this use case.
  
 2. Defining a metric of "information leakage" that occurs on a page visit will be a parallel task assigned to a third team member. This task is a bit more research focussed and relies heavily on current literature. There is substantial research already available on this topic and it is an active domain. The metric properties will be specified during the September UCOSP sprint to enable its usability as a component in the other objectives of this project. Example usage of this metric would be to help with risk assessment and further element-level actions. For pages with a very low leakage, no further action would be required. I.e. plain html pages not running javascript or setting cookies, should return a leakage value of 0.0. Pages collecting sufficient information to confidently and uniquely identify a single firefox visitor should return a leakage value of 1.0. Any value in between becomes part of the balancing act between blocking scripts (to decrease leakage) and preserving page functionality.
 
