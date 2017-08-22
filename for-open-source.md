@@ -1,6 +1,5 @@
 ---
 title: 'Information for project mentors'
-date: 2010-06-18T18:54:20+00:00
 author: UCOSP Steering
 layout: default
 ---
