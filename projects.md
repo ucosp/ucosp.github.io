@@ -202,43 +202,70 @@ Mentors
 
 ### 8. Safe Browsing and Tracker Prevention
 
-#### Problem statement:
+#### Problem statement: 
 
-Current state-of-the art work on safe browsing and tracker prevention largely rely on heuristic `[1]` approaches or (semi) manually updated white/black lists `[2]`. When it comes to measuring the efficacy of privacy and tracking protection service, client-side performance is difficult to asses. Using web crawler technology to study the incidence and prevalence of tracker code also has limitations in terms of the portion of the web that can be seen. Current anti-tracking technologies attempt to block the execution of (primarily `[3]`) javascript code deemed to be providing tracking assets to third-party entities. Intervention in these cases can lead to unpredicted breakage in the functionality of websites. Furthermore, both client-side evaluation and crawler based assessment of potential fingerprinting attacks can not provide a known false negative rate when it terms of fingerprinting attacks that are undetected based on heuristic methods and blacklist-based approaches.
+Current work on safe browsing and tracker prevention largely rely on heuristic `[1]` approaches or (semi) manually updated
+white/black lists `[2]`. When it comes to measuring the efficacy of privacy and tracking protection service, client-side performance is difficult
+to asses. Current anti-tracking technologies attempt to block the execution of (primarily `[3]`) javascript code deemed to be providing tracking
+assets to third-party entities. This project will perform largely exploratory analysis into the potential for real-time and element-wise
+tracker protection.
 
-#### Project contribution:
+#### Project contribution: 
 
-We would like to gather a labeled dataset to guide development of (rule-based) classification of page elements in real time. The aim would be to prevent tracking code from executing while minimizing page breakage. The classifier should be evaluated such that it generalizes well to new pages without the need for a black-list/white-list paradigm.
+In the previous UCOSP cycle, students performed a large-scale data collection of web page data, including javascript
+execution traces from just under 1 million websites. While hyperlinking connectivity on this dataset can be assessed, a true representation
+of web traffic can not be inferred. The focal point of this project will be to perform an in-depth analysis of the crawl data in order to
+prepare a statistical measure of the data leakage incurred when a particular page is visited . This information leakage criteria will inform
+a browser-loaded webextension to help users attain a general understanding of what Safe Browsing means on today’s web.
 
-The project will combine a small set client-side measurements for a group of opt-in users’, measured during unperturbed web browsing. The set of metrics to be collected in this context will be discussed during the September UCOSP sprint with the first full team deliverable being a finalized list of measurements to be delivered on or before October 18th. Measurement of features indicative of fingerprinting should be the primary focus with additional features relating to the user experience also considered; for example: page breakage, load-times, layout disruption, etc. Some starting points of projects active in this technology space are here:  [chameleon](https://github.com/ghostwords/chameleon), [panopticlick](https://gist.github.com/mlopatka/0932beb331d64836938018d42810af4a), [cliqz](https://github.com/cliqz-oss/privacy-bot). 
+The project will use the crawl data already collected as a surrogate for actual user browsing data while the project team, in collaboration
+with other Mozilla engineers, prototype an element-level javascript blocking approach. This work will later be used to collect a small set of
+client-side measurements for a group of opt-in users. Measurement of the quantitative privacy loss incurred as a result of javascript
+elements indicative of fingerprinting should be the primary focus of the project. Some starting points of projects active in this technology
+space are here: [chameleon](https://github.com/ghostwords/chameleon), [panopticlick](https://www.eff.org/deeplinks/2017/11/panopticlick-30), [cliqz](https://github.com/cliqz-oss/privacy-bot).
 
 #### Design and Deliverables:
 
-A web extension will be developed to perform data collection on an opt-in cohort of firefox users. Broad spectrum Javascript API calls to a variety of sources will be logged on a page-visit level. Information collected regarding api calls will be obfuscated on the client side using an [adaptation of the RAPPOR algorithm ](https://github.com/Alexrs95/rappor) before payload delivery. This will facilitate access to the raw data by UCOSP participants.
+Broad spectrum Javascript API calls have been collected for a set of crawled websites. A future aim shall be to use the findings from this
+large data set to evaluate the actual experience of users’ experiences online. In order Information collected regarding api calls will be
+obfuscated on the client side using an adaptation of the RAPPOR algorithm before payload delivery. This will facilitate access to the raw
+data by UCOSP participants. 
 
-Collaboration on this project between Mozilla and openWPM maintainer [Steven Engelhardt](https://senglehardt.com) will allow us to combine this information with a broader view of such API calls by detecting their  occurrence in a  large corpus of crawl data. One team member will be tasked with interfacing the classifier trained on our client data with the openWPM platform.
-
-In order to improve upon current methods for assessing anti-tracking performance, a criteria of “information leakage” will be developed and articulated in the context of reference statistics derived from the crawl data. This quantity will relate to the distinctiveness of a particular browser visit to a page in a feature space defined by the information accessible by the page.
-
-The data derived from this two-prong collection will generate a semi-labeled dataset with which to train a classifier that does not rely on black-list/white-list resources. Assuming a sufficiently level of performance is achieved, such a classifier could be used to generate and update a black-list by periodic crawls or perform tracking-blocking in real time if deployed in a web extension. A reach goal of this project will be to investigate the feasibility of detecting and clocking first-party tracking efforts, which are a [growing concern](https://medium.com/firefox-context-graph/are-trackers-the-new-backbone-of-the-web-fb800435da15) as a small number of entities gain ever-larger presence on the web.
+In order to improve upon current methods for assessing anti-tracking performance, a criteria of “information
+leakage” will be developed and articulated in the context of reference statistics derived from the crawl data. This quantity will relate to
+the distinctiveness of a particular browser visit to a page in a feature space defined by the information accessible by the page. Preliminary
+work on browser fingerprinting has been done by the EFF utilizing a worst-case assumption of data collection; the work performed in this
+project will compliment that research by providing a realistic model of attempted collection behaviour exhibited by websites in the wild.
 
 #### Modular components (student roles):
 
-1. a) One team member will be tasked primarily with continuing work on [a web extension to log all javascript API calls](https://github.com/groovecoder/data-leak) executed during full scope of page interaction. Data collection may be extended to include page breakage and load time metrics.
-   b) The payload of Javascript api calls at the page level must be obfuscated using to guard against domain/page profiling attacks by fingerprinting. Dave Zeber, will co-mentor a second team member focussed on evaluating the possibility of extending existing differential privacy algorithms to this use case.
- 
-2. Defining a metric of "information leakage" that occurs on a page visit will be a parallel task assigned to a third team member. This task is a bit more research focussed and relies heavily on current literature. There is substantial research already available on this topic and it is an active domain. The metric properties will be specified during the September UCOSP sprint to enable its usability as a component in the other objectives of this project. Example usage of this metric would be to help with risk assessment and further element-level actions. For pages with a very low leakage, no further action would be required. I.e. plain html pages not running javascript or setting cookies, should return a leakage value of 0.0. Pages collecting sufficient information to confidently and uniquely identify a single firefox visitor should return a leakage value of 1.0. Any value in between becomes part of the balancing act between blocking scripts (to decrease leakage) and preserving page functionality.
+1. Defining a metric of "information leakage" that occurs on a page visit will be a central task for all team members. One team member will
+focus on the implementation of this metric in the context of team discussion and extensive review of current literature. There is substantial
+research already available on this topic and it is an active domain. The metric properties will be specified during the January UCOSP sprint
+to enable its usability as a component in the other objectives of this project. Example of the desired usage of this metric would be to help
+with risk assessment and further element-level actions. For pages with a very low leakage, no further action would be required. I.e. plain
+html pages not running javascript or setting cookies, should return a leakage value of 0.0. Pages collecting sufficient information to
+confidently and uniquely identify a single firefox visitor should return a leakage value of 1.0. Any value in between becomes part of the
+balancing act between blocking scripts (to decrease leakage) and preserving page functionality.
 
-3. Data analytics and classifier implementation: In order to make use of the data collection efforts from both the client-collection and crawl portions, a feature selection procedure must be carried out. This will be performed by a fourth team member. This task may consider the additional context of information we can get from project  [Fathom](https://github.com/mozilla/fathom/blob/master/README.md). The features selected here will form the input space of a classifier that will assign a label of safe/not-safe to specific page elements. The efficacy of classification strategies will be evaluated against the information leakage metric described above. A substantial validation step will be required here to prototype and evaluate various approaches to this problem that are expected not only to prevent fingerprinting, but also (where possible) preserve page functionality.
+2. Visualization -- A key component to tracking protection is raising awareness of the mechanisms and severity of tracking. This may help
+users to change their online behaviour through the use of tools that help protect against tracking. The data analysis of the crawl data
+should for the basis of a sub-task related to visualizing privacy loss as a result of online tracking.
 
-#### Mentorship team:
+#### Prerequisite skills:
+
+All students should be proficient in either python or javascript. Interaction with amazon’s s3 storage platform will be mandatory for data
+access. Quantitative statistical analysis will play a critical role in the datamining component of the project.
+
+
+### Mentorship team:
+
 Project lead: Martin Lopatka (Mozilla)
 
 Differential Privacy expert: Dave Zeber (Mozilla)
 
 TrackWare specialist: Luke Crouch (Mozilla)
 
-OpenWPM and browser fingerprinting specialist: Steven Engelhardt (Princeton)
 
 `[1]` [privacybadger](https://www.eff.org/privacybadger), [adblockplus](https://adblockplus.org)
 
