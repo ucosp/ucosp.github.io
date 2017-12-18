@@ -175,28 +175,36 @@ Learn about our version control and continuous integration process: https://jege
 
 ### 7. Swift Support in WALA
 
-Apple is a dominant player in the mobile space, and Swift is its new language for writing mobile apps. While Apple provides tooling based on LLVM, that is low-level machinery that is not readily usable by researchers working on program analysis at a higher level. Current research frameworks such as WALA and SOOT have little support for Swift, while, on the other hand, they provide extensive support for Android, even its latest versions. The result is a plethora of published tools for Android, e.g. Flowdroid, Scandroid, Stringoid, DroidInfer to name a few, and a relative dearth of tools for Apple platforms.
-Given the popularity of Apple products and that wealth of published work for Android based on available infrastructure, we believe that lack suitable Swift infrastructure is a significant impediment. So support for Swift in a major platform like WALA would enable a wide range of new work.
+Apple is a dominant player in the mobile space, and Swift is its new language for writing mobile apps. The LLVM-based tooling that Apple provides is low-level machinery that is not readily usable by researchers working on program analysis at a higher level. Current research frameworks such as WALA and SOOT have little support for Swift, while, on the other hand, they provide extensive support for even the latest versions of Android. The result is a plethora of published tools for Android, e.g. Flowdroid, Scandroid, Stringoid, DroidInfer to name a few, and a relative dearth of tools for Apple platforms. 
 
-Apple’s security model is significantly different from that of Android, for example; similarly Swift is rather different from popular languages on Android, especially at the type system level. It would be interesting to understand how these aspects affect program analysis, and analysis infrastructure is a prerequisite for such investigations.
+Given the popularity of Apple products and a wealth of published work for Android based on available infrastructure, we believe that a lack of suitable Swift infrastructure is a significant impediment. Therefore, support for Swift in a major platform like WALA would enable a wide range of new work. For example, Apple's security model is significantly different from that of Android; similarly, Swift is rather different from popular languages on Android, especially at the type system level. It would be interesting to understand how these aspects affect program analysis, and analysis infrastructure is a prerequisite for such investigations.
 
-There has been some ongoing work on Swift support since the WALA hack-a-thon held at  PLDI 2017 , where the hack-a-thon participants implemented some basic level of functionality for people to explore call WALA from within the Swift compiler.
+There has been some ongoing work on Swift support since the WALA hack-a-thon held at PLDI 2017, where participants implemented some basic level of functionality for people to explore call WALA from within the Swift compiler. During UCOSP Fall 2017, the team was able to add WALA support for some Swift features including Integer Literals, String Literals, and Boolean Short-Circuit Evaluation.
 
-#### Concrete project idea
+#### Concrete Project Ideas
+1. Working primarily in the Swift compiler (C++, LLVM), evaluate and extend Swift call graph construction in WALA (Java, through JNI) for open-source Swift code, and create special-purpose policies to avoid precision loss in advanced language features
+2. Write test cases which exercise high- and low-level language features in order to evaluate accuracy and coverage of the Swift-WALA project
 
-Evaluate and extend Swift call graph construction in WALA for some open source Swift code, and create any needed special-purpose policies to avoid precision loss in the face of advanced Swift features.  
+#### Mentors
+Karim Ali, University of Alberta
+Julian Dolby, IBM T. J. Watson Research Center
 
-Mentors  
+#### Required Skills
+ * Good knowledge of compiler theory and components
+ * Advanced C/C++ programming experience
+ * Comfortable working in a purely command-line Unix environment
+ * Software engineering knowledge (e.g. working with and implementing various design patterns)
 
- * Karim Ali, University of Alberta
- * Julian Dolby, IBM T. J. Watson Research Center
- 
-#### Required skills
- * Good knowledge of compilers and/or some knowledge of the LLVM infrastructure
- * Knowledge of Swift is beneficial
- * C/C++ programming
- * Java programming
- * Knowledge about program analysis is a plus.
+#### Assets
+ * Knowledge of Swift programming language
+ * Some knowledge of the LLVM infrastructure
+ * Experience working with Git in a distributed team environment
+ * Java programming experience
+ * Program analysis knowledge/experience
+ * macOS machine with > 8GB RAM (can be compiled on Ubuntu as well, but is more difficult)
+
+#### Languages/Technologies: experience in any or all of these is an asset
+C++, Java, Swift, JNI, LLVM, Swift Compiler, WALA, Static Analysis, Mac/Ubuntu CLI, Xcode, clang, Maven, Ninja, CMake
 
 ---
 
