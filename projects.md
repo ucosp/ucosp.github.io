@@ -17,6 +17,7 @@ We have an excellent list of projects, and I'd like to thank all the project men
   6. **Formulize**
   7. **WALA Program Analysis for Swift**
   8. **Safe Browsing and Tracker Prevention**
+  9. **Automated Benchmark Management **
 
 ---     
 ### 1. Review Board
