@@ -280,3 +280,53 @@ TrackWare specialist: Luke Crouch (Mozilla)
 `[2]` [disconnect.me](https://github.com/disconnectme/disconnect-tracking-protection), [ghostery](https://www.ghostery.com),  [uBlock](https://github.com/gorhill/uBlock/tree/master/assets)
 
 `[3]` While most user information is exposed through JavaScript, there are some fingerprintable surfaces which can be compromised without the use of JavaScript. For example, HTTP headers could expose operating system type and version, and browser vendor and version. 
+
+---
+
+### 9. Filtering system for the Automated Benchmark Management (ABM) web application.
+
+
+### Automated Benchmark Management (ABM)
+
+A common way of testing software or research prototypes is to use well-known benchmark suites such as the DaCapo suite [1] for example. However, such large benchmarks are hard to create and to maintain, and this work is often done by hand. Moreover, benchmark suites currently only exist to test for specific properties, and are not necessarily adapted to the needs of the tested software. The Automated Benchmark Management (ABM) methodology [2] has been created to address the shortcomings of current benchmark suites. It aims at automatizing the process of benchmark creation and maintenance, and makes it fully customizable to the user, so that they can create benchmark suites adapted to their use. We are currently building a website [3] to implement the ABM methodology. The current implementation crawls GitHub for open-source, real-world projects. It allows users to filter out unsuitable projects using the Hermes project, which analyzes projects and collects various metrics [4], and create and update collections from the remaining projects.
+
+#### Your work
+
+After the initial search, users can filter out unsuitable projects, using sets of pre-defined filters. Your work will be to re-design and implement the user interface for the filtering module, and to improve its usability. At the end of this project, users should be able to easily select the set of projects they need with respect to the filters they select.
+
+Your work will mainly focus on frontend programming in AngularJS. Interactions with the backend are handled in Java. ABM is managed through multiple branches on a git repository, and is updated using the Jenkins continuous integration system. 
+
+#### Detailed tasks
+
+1. Define the interactions between ABM and Hermes, and determine the requirements that Hermes should meet to implement the filtering module for ABM. Communicate the requirements for the filter modules to the Hermes team.
+2. Design and implement the interface that shows the user the filtering options/results for a given collection of projects.
+3. Close the loop to allow the user to filter projects using the new interface.
+4. Implement secondary functionalities, such as caching Hermes results, or undo options in case the user mistakenly removes a project or runs the wrong filter(s).
+
+#### Required skills: 
+
+- Good understanding of Javascript. 
+- Knowledge of relational database systems.
+- Knowledge of software design and efficient programming. 
+- Prior knowledge of AngularJS and web application development is a plus.
+
+#### Learning outcomes:
+
+- Frontend programming with AngularJS.
+- Collaborative software development with git and Jenkins.
+
+#### Mentors:
+Karim Ali, University of Alberta
+
+Lisa Nguyen, Fraunhofer IEM
+
+Ben Hermann, Paderborn University
+
+### References: 
+[1]  Stephen M. Blackburn, et al. 2006. The DaCapo benchmarks: java benchmarking development and analysis. In Proceedings of the 21st annual ACM SIGPLAN conference on Object-oriented programming systems, languages, and applications (OOPSLA '06). ACM, New York, NY, USA, 169-190. DOI = http://dx.doi.org/10.1145/1167473.1167488
+
+[2] Lisa Nguyen Quang Do, Michael Eichberg, and Eric Bodden. 2016. Toward an automated benchmark management system. In Proceedings of the 5th ACM SIGPLAN International Workshop on State Of the Art in Program Analysis (SOAP 2016). ACM, New York, NY, USA, 13-17. DOI: http://dx.doi.org/10.1145/2931021.2931023
+
+[3] ABM: http://abm.cs.upb.de/abm/index.html#/ 
+
+[4] Michael Reif, Michael Eichberg, Ben Hermann, and Mira Mezini. 2017. Hermes: assessment and creation of effective test corpora. In Proceedings of the 6th ACM SIGPLAN International Workshop on State Of the Art in Program Analysis (SOAP 2017). ACM, New York, NY, USA, 43-48. DOI: https://doi.org/10.1145/3088515.3088523 
