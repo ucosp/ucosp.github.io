@@ -7,7 +7,7 @@ layout: default
 
 We have an excellent list of projects, and I'd like to thank all the project mentors for taking the time to work with our students.
 
-### January 2018 (In progress)
+### January 2018 
 
   1. **Review Board:**
   2. **UMPLE:**
