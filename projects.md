@@ -171,6 +171,7 @@ Browse the GitHub repository: https://github.com/jegelstaff/formulize
 Video tutorials for using Formulize (the full series is about three hours, but you can skip around between various videos at your leisure): http://formulize.org/formulize-workshop
 
 Learn about our version control and continuous integration process: https://jegelstaff.github.io/formulize/developers/
+
 ---
 
 ### 7. Swift Support in WALA
