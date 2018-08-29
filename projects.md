@@ -14,6 +14,7 @@ We have an excellent list of projects, and I'd like to thank all the project men
   3. **Firefox Debugger**
   4. **Formulize**
   5. **Tracking Tecnologies on the Modern Web**
+  6. **Firefox for iOS**
 
 ---     
 ### 1. Review Board
@@ -142,7 +143,7 @@ Preliminary work on browser fingerprinting has been done by the EFF utilizing a 
 
 
 
-### Mentorship team:
+#### Mentorship team:
 
 Sarah Bird, Daid Zeber, Victor Ng, Luke Crouch, Martin Lopatka (Mozilla)
 `[1]` https://github.com/mozilla/Overscripted-Data-Analysis-Challenge
@@ -150,4 +151,15 @@ Sarah Bird, Daid Zeber, Victor Ng, Luke Crouch, Martin Lopatka (Mozilla)
 `[2]` https://www.eff.org/privacybadger 
 
 `[3]`https://www.eff.org/deeplinks/2017/11/panopticlick-30 
+
+---
+### 6. Firefox for iOS
+
+Mozilla will be shipping version 8.0 of Firefox Focus for iOS sometime in Q4. We are still filling out what items will be in version 8.0, but you can see the current items [here](https://github.com/mozilla-mobile/focus-ios/milestone/29). One large feature is to add multitasking (i.e., tabs) to Focus iOS. Some other items we are considering adding are Search Suggestions and a hook into our A/B testing platform [Fretboard](https://github.com/mozilla-mobile/android-components/blob/master/components/service/fretboard/README.md) and further integration with new iOS12 features. We contemplate there would also be bug fixes and other smaller feature requests in 8.0.
+
+As part of this project we expect the engineering team would be part of our usual Agile Release process, which include participating in triage, sprint planning, localization, and QA.
+
+#### Mentorship team
+
+
 
