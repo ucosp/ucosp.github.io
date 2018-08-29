@@ -56,9 +56,10 @@ The exact set of skills you will employ depends on the task(s) you choose to wor
   
 ### 3. Firefox  debugger
 
-Last year, the [Firefox Debugger](https://github.com/devtools-html/debugger.html/) team decided to re-write the UI on Github with React. Today it has a modern web stack (React, Webpack, Babel) and is one of the most widely contributed to Mozilla projects. 
 
-With this project, we want to take the next step and build on our relationships with the major framework and library teams to build the kind of tools that we would have liked to have while building the Debugger. We hope that these integrations will make the debugger feel more like a React or Ember debugger than a JS debugger.
+Within the past two years, the [Firefox Debugger](https://github.com/devtools-html/debugger.html/) team released a new UI that was developed on Github and written in React. Today it has a modern web stack (React, Webpack, Babel) and is one of the most widely contributed to Mozilla projects. 
+
+With this project, we want to continue improving the debugger’s user interface and accessibility, ensuring an enjoyable user experience for all developers.  We also want to continue the relationships we’ve created with major framework developers, like React, Ember, and Angular.  We hope that our framework integrations will make the debugger feel more like a React or Ember debugger than just a JS debugger.
 
 Some examples of framework and library integrations include:
 
@@ -66,13 +67,16 @@ Some examples of framework and library integrations include:
 2. Showing framework components in the source tree.
 3. Previewing library objects on hover.
 
-Highlighting framework frames in the call stack will let us tell the user what frameworks are doing when the application pauses. For instance, if the user pauses while making an API call, the debugger call stack can show the user that the application is updating the user record because the “save” button was pressed.
+Some examples of user experience improvements include:
 
-Showing framework components in the source tree will let users see their application’s framework types. In the case of React and Redux that includes (Components, Actions, and Stores). We think this view can be more valuable than just seeing source files because it is closer to how developers think about their applications. It also provides us a way to link to other framework information in the future. 
+1. Updating user interface elements to match changing Firefox brand and design updates
+2. Ensuring icon and symbol integrity throughout multiple components
+3. Modernizing the debugger search interfaces
+4. Improving accessibility so that developers of varying backgrounds can enjoy a great user experience
 
-Previewing library objects will let frameworks format the objects the way they were intended to be seen. For instance, the most important data in a React component is the props and state. We hope to give frameworks control over how users see their framework objects because we think it paves the way for future integration points in the future. 
+The examples cited above, as well as a host of other opportunities to improve and extend the Firefox Debugger, will provide an exciting learning experience for the student.
 
-These features are exciting because it shows that when we work closely with libraries and framework teams, we can build new types of tools that help developers every day.
+We believe that these improvements to the Firefox Debugger will make debugging JavaScript enjoyable, accessible, and streamlined for developers of all skill ranges and backgrounds.
 
 ---
 
