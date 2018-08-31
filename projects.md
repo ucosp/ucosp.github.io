@@ -15,6 +15,7 @@ We have an excellent list of projects, and I'd like to thank all the project men
   4. **Formulize**
   5. **Tracking Tecnologies on the Modern Web**
   6. **Firefox for iOS**
+  7. **TAPP: A web application for TA assignments**
 
 ---     
 ### 1. Review Board
@@ -161,5 +162,21 @@ As part of this project we expect the engineering team would be part of our usua
 
 #### Mentorship team
 
+Susheel Daswani, Stefan Arentz, Barbara Bermes, Vesta Zare
 
+---
+### 7. TAPP: A web application for TA assignments
+
+In a large department the process of collecting TA applications, matching TAs to courses, sending out contracts, and ensuring that TAs get paid is a complex process.  We have built a [TAPP](https://github.com/uoft-tapp/tapp-cp), a web application that provides an effective user interface to help make these tasks more manageable.  It has been used for over a year to hire more than 300 TAs each term for several dozen courses.
+
+Although the app has been deployed for over a year in production, it is still in its early days as an open source project.  It is built using React in the front end and Rails in the back end.
+
+The main project for this term will be to build the student application interface.  We have been using another system for the application forms and uploading the applications (as a JSON file) into TAPP.  The application form we have been using is missing some key features, and we want to take advantage of better integration with the rest of the system.
+
+Other projects include more work on an instructor interface, and additional reporting features.
+
+This project would be particularly good for students with an interest in user interface design.  Some React experience would be helpful.
+
+#### Mentor
+Karen Reid (University of Toronto)
 
