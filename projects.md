@@ -15,7 +15,7 @@ We have an excellent list of projects, and I'd like to thank all the project men
   4. **Formulize**
   5. **Tracking Tecnologies on the Modern Web**
   6. **Firefox for iOS**
-  7. **TAPP: A web application for TA assignments**
+  7. **Firefox internal config UI**
 
 ---     
 ### 1. Review Board
@@ -165,18 +165,23 @@ As part of this project we expect the engineering team would be part of our usua
 Susheel Daswani, Stefan Arentz, Barbara Bermes, Vesta Zare
 
 ---
-### 7. TAPP: A web application for TA assignments
+### 7. Rewrite the Firefox internal configuration user interface ("about:config") using Web technologies
 
-In a large department the process of collecting TA applications, matching TAs to courses, sending out contracts, and ensuring that TAs get paid is a complex process.  We have built a [TAPP](https://github.com/uoft-tapp/tapp-cp), a web application that provides an effective user interface to help make these tasks more manageable.  It has been used for over a year to hire more than 300 TAs each term for several dozen courses.
+Typing "about:config" in the address bar brings users to an internal configuration page where several settings can be changed. These settings occasionally need to be modified on end user machines to troubleshoot compatibility and performance, and can be used to enable or disable experimental features. Some persistent data is also stored here, and this page allows Firefox engineers to see and modify this configuration database during feature development.
 
-Although the app has been deployed for over a year in production, it is still in its early days as an open source project.  It is built using React in the front end and Rails in the back end.
+This is currently implemented using XUL, a legacy technology that is being actively removed from Firefox. The Firefox team is planning to replace "about:config" with a new implementation that uses HTML, CSS, and standard JavaScript, without third-party frameworks like React or jQuery.
 
-The main project for this term will be to build the student application interface.  We have been using another system for the application forms and uploading the applications (as a JSON file) into TAPP.  The application form we have been using is missing some key features, and we want to take advantage of better integration with the rest of the system.
+This is a chance to:
+ - Improve user interface used daily by thousands of people
+ - Write code in a high-quality, real-world production environment
+ - Use test-driven development, writing automated tests alongside the production code
+ - Work alongside the in-house development team with code and design review process
+ - Improve the usability and usefulness of the configuration user interface
+ - Use the Firefox design system to improve the look and feel of the page
 
-Other projects include more work on an instructor interface, and additional reporting features.
+The code writing is a small part of the task. Given the nature of packaged software, students should expect to spend significant time studying the architecture of the browser, writing small proofs of concept, communicating with other team members and the community, keeping ongoing documentation, and multitasking through different aspects of the project at the same time.
 
-This project would be particularly good for students with an interest in user interface design.  Some React experience would be helpful.
 
-#### Mentor
-Karen Reid (University of Toronto)
+
+#### Mentorship team
 
