@@ -182,6 +182,5 @@ This is a chance to:
 The code writing is a small part of the task. Given the nature of packaged software, students should expect to spend significant time studying the architecture of the browser, writing small proofs of concept, communicating with other team members and the community, keeping ongoing documentation, and multitasking through different aspects of the project at the same time.
 
 
-
 #### Mentorship team
-
+Paolo Amadini, Brian Grinstead, Dave Townsend
